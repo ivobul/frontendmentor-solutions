@@ -1,0 +1,229 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Min height */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+img {
+  border-style: none;
+}
+
+/* General styling */
+body {
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 950px;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+/* Introduction */
+.intro {
+  max-width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.intro span {
+  display: block;
+  font-weight: bold;
+}
+
+.intro p {
+  color: gray;
+  padding-top: 1rem;
+}
+
+/* Four card feature section */
+.four-card-body {
+  display: flex;
+  flex-flow: column;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+/* Margin bottom utility */
+.margin-b-2 {
+  margin-bottom: 2rem;
+}
+
+/* Flexbox column */
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem .9rem;
+}
+
+/* Card box */
+.card {
+  border-width: 6px;  
+  border-top-style: outset;
+  border-radius: 6px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  flex: 100%;
+  height: 260px;
+  padding: 1.5rem 1rem .5rem 2rem;
+  position: relative;
+}
+
+/* Card boxes - Border top colors */
+.border-color-cyan {
+  border-top-color: rgba(69, 211, 211, 0.7);
+}
+.border-color-red {
+  border-top-color: rgba(	234, 83, 83, 0.7);
+}
+.border-color-orange {
+  border-top-color: rgba(251,173,74, 0.7);
+}
+.border-color-blue {
+  border-top-color: rgba(84, 158, 242, 0.7);
+}
+
+/* Card box - Text */
+.card h3 {
+  font-size: 1.1rem;
+  padding-bottom: .7rem;
+}
+
+.card p {
+  color: gray;
+  line-height: 1.5;
+}
+
+/* Card box - Vector Graphics */
+.card img {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  display: block;
+}
+
+/* Footer */
+.attribution { 
+  font-size: .8rem; 
+  padding: 2rem 2rem 0.5rem;
+  text-align: center; 
+}
+
+.attribution a { 
+  color: #3E52A3; 
+  text-decoration: none;
+}
+
+/* Responsive Design - Media Queries */
+@media only screen and (min-width: 768px) {
+  .intro {
+    padding: 3rem;
+    max-width: 600px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .four-card-body {
+    display: flex;
+    flex-flow: row;
+    max-width: 1100px;
+    padding: 1rem;
+  }
+  
+  .column {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 580px;
+    justify-content: center;
+    padding: 0 .9rem; 
+  } 
+
+  .margin-b-2 {
+    margin-bottom: 0;
+  }
+
+  .attribution { 
+    margin-top: 5rem;
+    padding: .5rem 2rem;
+  }
+}
