@@ -36,19 +36,15 @@ html {
   box-sizing: inherit;
 }
 
-/* Min height */
-html {
-  height: 100%;
-}
-
+/* Sizing - Height */
 body {
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 /* Typography */
 body {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 * {
@@ -75,6 +71,11 @@ video {
 
 img {
   border-style: none;
+  display: block;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* General styles */
@@ -100,9 +101,9 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   min-height: 100vh;
   padding: 2.5rem 1.5rem;
-  justify-content: center;
 }
 
 /* The single price grid component */ 
@@ -121,14 +122,17 @@ h3 {
   background-color: #fff;
   padding: 2.1rem;
 }
+
 .intro h1 {
   color: #2ab2af;
   padding-bottom: 1rem;
 }
+
 .intro h2 {
   color: #c0df34;
   padding-bottom: .7rem;
 }
+
 .intro p {
   color: gray;
   line-height: 1.5;
@@ -139,6 +143,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
 }
+
 .main h2 {
   color: #fff;
   padding-bottom: 1rem;
@@ -151,9 +156,11 @@ h3 {
   flex: 100%;
   padding: 1.8rem 2.1rem 1.5rem;
 }
+
 .subscribe h3 {
   color: #f9f6f2;
 }
+
 .subscribe .price {
   color: #fff;
   font-size: 2rem;
@@ -161,6 +168,7 @@ h3 {
   padding-right: 1rem;
   padding-bottom: 1.1rem;
 }
+
 .subscribe .price span {
   color: #e1d3c1;
   font-size: 1rem;
@@ -168,21 +176,24 @@ h3 {
   top: .6rem;
   left: 4rem;
 }
+
 .subscribe form {
-  margin-top: 1.9rem;
+  margin-top: 2.2rem;
 }
+
 .subscribe button {
   background-color: #bfdf32;
   border: none;
   border-radius: 6px;
   box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
   color: #fff;
-  display: block;
-  font-size: 1rem;
+  display: ;
+  font-size: 1.2rem;
   font-weight: 700;
   padding: .8rem .6rem;
   width: 100%;
 }
+
 .subscribe button:hover {
   cursor: pointer;
 }
@@ -195,6 +206,7 @@ h3 {
   flex: 100%;
   padding: 1.8rem 2.1rem 1.5rem;
 }
+
 .about ul li {
   color: #f9f6f2;
   padding: .1rem 0;
@@ -204,6 +216,7 @@ h3 {
 footer {
   flex-basis: 100%;
 }
+
 .attribution { 
   font-size: .9rem; 
   padding: 2rem 1rem;
@@ -214,23 +227,23 @@ footer {
   color: #3e52a3; 
 }
 
-/* Responsiveness - Media Queries */
-@media only screen and (min-width: 768px) {
-  .subscribe, .about {
+/* Media Queries */
+@media screen and (min-width: 576px) {
+  .subscribe, 
+  .about {
     flex: 50%;
   }
+
   .subscribe {
     border-bottom-left-radius: 5px;
   }
+
   .subscribe button {
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: .9rem .6rem;
     backface-visibility: hidden;
     transform: perspective(1px);
     transition: transform .3s ease-in-out;
-    width: 100%;
   }
+
   .subscribe button:hover {
     box-shadow: 0px 0px 150px rgba(0,0,0,0.3);
     cursor: pointer;
