@@ -36,24 +36,23 @@ html {
   box-sizing: inherit;
 }
 
-/* Min height */
-html {
-  height: 100%;
-}
+/* Sizing - Height */
 body {
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 /* Typography */
 body {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
+
 * {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
+
 a,
 a:visited {
   color: inherit;
@@ -69,11 +68,17 @@ img,
 video {
   max-width: 100%;
 }
+
 img {
   border-style: none;
+  display: block;
 }
 
-/* General styling */
+a {
+  text-decoration: none;
+}
+
+/* General styles */
 body {
   background: #674baf url(images/bg-mobile.svg) no-repeat top center;
   background-size: contain;
@@ -113,20 +118,25 @@ header img {
 .main .intro {
  padding-top: 3rem;
 }
+
 .main h1 {
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
 }
+
 .main p {
   padding-top: 1.5rem;
 }
+
 .main h1 span {
   display: block;
 }
+
 .main form {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
+
 .main button {
   background-color: #fff;
   border: none;
@@ -139,9 +149,11 @@ header img {
   margin: 0 auto;
   width: 180px;
 }
+
 .main button:hover {
   cursor: pointer;
 }
+
 .main button:active {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
   top: 3px;
@@ -161,36 +173,43 @@ header img {
 .icons div {
   padding: 0 .4rem;
 }
+
 .icons .fa-facebook {
   border: 1px solid #fff;
   display: inline-block;
   border-radius: 50%;
   padding: .5rem .7rem;
 }
+
 .icons .fa-twitter {
   border: 1px solid #fff;
   display: inline-block;
   border-radius: 50%;
   padding: .5rem;
 }
+
 .icons .fa-instagram {
   border: 1px solid #fff;
   display: inline-block;
   border-radius: 50%;
   padding: .5rem;
 }
+
 .icons .fa-facebook:hover,
 .icons .fa-instagram:hover,
 .icons .fa-twitter:hover {
   cursor: pointer;
   background-color: #fff;  
 }
+
 .icons .fa-facebook:hover {
   color: #3b5998;
 }
+
 .icons .fa-twitter:hover {
   color: #1da1f2; 
 }
+
 .icons .fa-instagram:hover {
   color: #e44379; 
 }
@@ -200,18 +219,21 @@ footer {
   padding: 2rem 1rem;
   width: 100%;
 }
+
 .attribution { 
   font-size: .8rem; 
   text-align: center; 
 }
+
 .attribution a { 
   text-decoration: none;
 }
+
 .attribution a:hover {
   color: #fd889a;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     background: #674baf url(images/bg-desktop.svg) no-repeat top center;
     background-size: contain;
@@ -226,15 +248,19 @@ footer {
     padding-top: 6rem;
     text-align: unset;
   }
+
   .main .illustration, .main .intro {
     flex: 50%;
   }
+
   .main .intro {
     padding-left: 3rem;
   }
+
   .main h1 {
     font-size: 2rem;
   }
+
   .main button {
     font-size: 1.1rem;
     margin: 0;
