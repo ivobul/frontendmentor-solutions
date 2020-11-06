@@ -80,7 +80,7 @@ a {
 
 /* General styles */
 body {
-  background-color: #ECF2F8;
+  background-color: #ecf2f8;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
@@ -88,7 +88,9 @@ body {
   padding: 0 1.5rem;
 }
 
+/* Grid container */
 .grid {
+  column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
@@ -98,11 +100,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   min-height: 100vh;
-  column-gap: 20px;
-  row-gap: 20px;
   padding: 2rem 0;
+  row-gap: 20px;
 }
 
+/* Grid items */
 .box {
   border-radius: 5px;
   padding: 1.5rem;
@@ -110,7 +112,7 @@ body {
 
 .daniel {
   background-color: #733fc8; 
-  background-image: url(bg-pattern-quotation.svg);
+  background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 90% top;
   color: #fff;
@@ -140,52 +142,53 @@ body {
   grid-area: patrick;
 }
 
-img {
-  border: 2px solid #CFCFCF;
-  border-radius: 50%;
-  height: auto;
-  width: 48px;
-}
-
+/* Grid items */
+/* Profile section */
 .profile {
   display: flex;
   flex-wrap: wrap;
+}
+
+.profile img {
+  border: 2px solid #bababa;
+  border-radius: 50%;
+  height: auto;
+  width: 48px;
 }
 
 .profile div {
   padding-left: 15px;
 }
 
-p {
-  font-size: 1.2rem;
+.profile span {
+  display: block;
 }
 
+.profile span:first-child {
+  font-weight: 700;
+}
+
+.profile span:last-child {
+  opacity: 0.5; 
+}
+
+/* Grid items */
+/* Text section */
 p,
 blockquote {
   margin-top: 20px;
 }
+
+p {
+  font-size: 1.2rem;
+}
+
 blockquote {
   opacity: 0.7;
 }
 
-span {
-  display: block;
-}
-
-span:first-child {
-  font-weight: 700;
-}
-
-span:last-child {
-  opacity: 0.5; 
-}
-
-h2 {
-  margin-top: 20px;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 992px) {
+/* Media queries */
+@media screen and (max-width: 991px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
