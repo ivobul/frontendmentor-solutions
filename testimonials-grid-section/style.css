@@ -187,6 +187,17 @@ blockquote {
   opacity: 0.7;
 }
 
+/* Footer */
+.attribution { 
+  font-size: .9rem; 
+  padding: 2rem 1rem;
+  text-align: center; 
+}
+
+.attribution a { 
+  color: #3e52a3; 
+}
+
 /* Media queries */
 @media screen and (max-width: 991px) {
   .grid {
