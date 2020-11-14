@@ -218,6 +218,17 @@ body {
   opacity: 0.7;
 }
 
+/* Footer */
+.attribution { 
+  font-size: .9rem; 
+  padding: 2rem 1rem;
+  text-align: center; 
+}
+
+.attribution a { 
+  color: #3e52a3; 
+}
+
 @media screen and (max-width: 991px) {
   body {
     background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
