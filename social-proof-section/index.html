@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor - Social proof section</title>
+     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    10,000+ of our users love our products.
-
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <div class="wrapper">
+      <div class="main">
+        <div class="row">
+          <div class="intro">
+            <h1>10,000+ of our users love our products.</h1>
+            <p> We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.
+            </p>
+          </div><!-- Introduction -->
+          <div class="user-ratings">
+            <div class="rating-bar">
+              <div>
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <span>Rated 5 Stars in Reviews</span>
+              </div>
+            </div><!-- Rating bar -->
+            <div class="rating-bar">
+              <div>
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <span>Rated 5 Stars in Report Guru</span>
+              </div>
+            </div><!-- Rating bar -->
+            <div class="rating-bar">
+              <div>
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <img src="images/icon-star.svg" alt="Star icon">
+                <span>Rated 5 Stars in BestTech</span>
+              </div>
+            </div><!-- Rating bar -->
+          </div><!-- User ratings section -->
+        </div><!-- Row -->
+        <div class="row">
+          <div class="user-review-box">
+            <div class="user-review-profile">
+              <img src="images/image-colton.jpg" alt="Colton profile pic">
+              <div>
+                <span>Colton Smith</span>
+                <span>Verified Buyer</span>
+              </div>
+            </div><!-- User review profile -->
+            <blockquote class="user-review-text">
+              “ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”
+            </blockquote>
+          </div><!-- User review box -->
+          <div class="user-review-box">
+            <div class="user-review-profile">
+              <img src="images/image-irene.jpg" alt="Irene profile pic">
+              <div>
+                <span>Irene Roberts</span>
+                <span>Verified Buyer</span>
+              </div>
+            </div><!-- User review profile -->
+            <blockquote class="user-review-text">
+              “ Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery. ”
+            </blockquote>
+          </div><!-- User review box -->
+          <div class="user-review-box">
+            <div class="user-review-profile">
+              <img src="images/image-anne.jpg" alt="Anne profile pic">
+              <div>
+                <span>Anne Wallace</span>
+                <span>Verified Buyer</span>
+              </div>
+            </div><!-- User review profile -->
+            <blockquote class="user-review-text">
+              “ Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone! ”
+            </blockquote>
+          </div><!-- User review box -->
+        </div><!-- Row -->
+      </div><!-- Main -->
+    </div><!-- Wrapper -->
   </body>
 </html>

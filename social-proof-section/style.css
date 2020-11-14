@@ -1,0 +1,283 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: .93rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General styles */
+body {
+  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  font-family: 'Spartan', sans-serif;
+}
+
+.wrapper {
+  padding: 0 2rem;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 3rem 0;
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+
+.row:last-child {
+  padding-top: 100px;
+}
+
+/* Introduction */
+.intro {
+  flex: 1;
+}
+
+.intro h1 {
+  color: #502050;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+.intro p {
+  color: #937B92;
+}
+
+/* User ratings section */
+.user-ratings {
+  flex: 2;
+}
+
+/* User ratings section */
+/* Rating bar section */
+.rating-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rating-bar div {
+  background-color: #F7F2F7;
+  border-radius: 5px;
+  flex-basis: 420px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+}
+
+.rating-bar:nth-child(1) div {
+  margin-right: 90px;
+}
+
+.rating-bar:nth-child(2) div {
+  margin-right: 45px;
+}
+
+.rating-bar img {
+  vertical-align: middle;
+}
+
+.rating-bar span {
+  color: #502050;
+  padding-left: 15px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+/* User review box */
+.user-review-box {
+  background-color: #502050;
+  border-radius: 5px;
+  color: #fff;
+  flex: 1;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.user-review-box:first-child,
+.user-review-box:nth-child(2) {
+  margin-right: 20px;
+}
+
+.user-review-box:nth-child(2) {
+  margin-top: 20px;
+}
+
+.user-review-box:last-child {
+  margin-top: 40px;
+}
+
+/* User review profile */
+.user-review-profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-review-profile img {
+  border-radius: 50%;
+  height: auto;
+  width: 48px;
+}
+
+.user-review-profile div {
+  padding-left: 25px;
+}
+
+.user-review-profile span {
+  display: block;
+  font-size: .8rem;
+}
+
+.user-review-profile span:first-child {
+  font-weight: 700;
+}
+
+.user-review-profile span:last-child {
+  color: #EE68A4;
+}
+
+/* User review text */
+.user-review-text {
+  font-size: .8rem;
+  font-weight: 500;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row:last-child {
+    padding-top: 50px;
+  }
+
+  .intro {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .user-ratings {
+    flex: 1;
+  }
+
+  .rating-bar {
+    justify-content: flex-start;
+  }
+
+  .rating-bar div {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .rating-bar:nth-child(1) div {
+    margin-right: 0;
+  }
+
+  .rating-bar:nth-child(2) div {
+    margin-right: 0;
+  }
+
+  .rating-bar span {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .user-review-box:first-child,
+  .user-review-box:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .user-review-box:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  .user-review-box:nth-child(3) {
+    margin-top: 20px;
+  }
+}
