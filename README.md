@@ -1,1 +1,1 @@
-# Frontend Mentor | Frontend Coding Challenges | Solutions
+# Frontend Mentor | Frontend Coding Challenges
