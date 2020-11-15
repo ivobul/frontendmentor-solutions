@@ -198,6 +198,10 @@ h3 {
   cursor: pointer;
 }
 
+.subscribe button:focus { 
+  outline: thin dotted; 
+}
+
 /* The about us section */
 .about {
   background-color: #4abebd;
