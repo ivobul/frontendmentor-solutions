@@ -159,6 +159,10 @@ header img {
   top: 3px;
 }
 
+.main button:focus { 
+  outline: thin dotted; 
+}
+
 /* Social icons section */
 .icons {
   align-items: flex-start;
