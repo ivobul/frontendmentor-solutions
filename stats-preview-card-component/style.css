@@ -1,0 +1,213 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  background-color: #090B1A;
+  font-size: .9375rem;
+}
+
+.wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif;
+  flex-basis: 1000px;
+  min-height: 400px;
+  overflow: hidden;
+  
+}
+
+.testimonial, .media {
+  flex-basis: 500px;
+}
+
+.testimonial {
+  background-color: #1B1938;
+  color: #fff;
+  padding: 50px;
+}
+
+.testimonial h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+}
+
+.testimonial p {
+  color: rgba(255, 255, 255, .75);
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 30px;
+}
+
+.testimonial span {
+  color: #ac5fdb;
+}
+
+.stats {
+  display: flex;
+  margin-top: 70px;
+}
+
+.stats div:not(div:last-child) {
+  padding-right: 50px;
+}
+
+.stats h3 {
+  color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+}
+
+.stats p {
+  color: rgba(255, 255, 255, .6);
+  text-transform: uppercase;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 0;
+}
+
+.media {
+  background-image: url(images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.row {
+  background: rgba(170, 92, 219, .5);
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Footer */
+.attribution { 
+  color: #fff;
+  font-size: .8rem; 
+  flex-basis: 100%;
+  padding-top: 20px;
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    flex: 1;
+    order: 2;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .stats {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stats div{
+    text-align: center;
+  }
+
+  .stats div:not(div:last-child) {
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+
+  .media {
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: 100% 100%;
+    flex-basis: 280px;
+    order: 1;
+  }
+}
