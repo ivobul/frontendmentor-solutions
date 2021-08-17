@@ -1,0 +1,230 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-color: #E0E8FF;
+  color: gray;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.card-component {
+  flex-basis: 500px;
+}
+
+header {
+  background-image: url(images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px 20px 0 0;
+  height: 270px;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  min-height: 430px;
+  padding: 50px 30px 50px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  color: #000;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.current-plan {
+  align-items: center;
+  background-color: #F5F7FF;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+}
+
+.current-plan img,
+.current-plan div {
+  margin-right: 20px;
+}
+
+.current-plan p:first-of-type {
+  color: #000;
+  font-weight: bold;
+}
+
+.current-plan a {
+  color: #3829E0;
+  margin-left: auto;
+  text-decoration: underline;
+}
+
+.current-plan a:active {
+  color: #7280A7;
+}
+
+.order {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.order a {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #3829E0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px #888888;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 0;
+  width: 100%;
+}
+
+button:active {
+  background-color: #7280A7;
+  box-shadow: inset 0px 0px 5px #7280A7;
+}
+
+footer {
+  flex-basis: 100%;
+  margin-top: 30px;
+}
+
+.attribution {
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .current-plan {
+    flex-flow: column;
+  }
+
+  .current-plan a {
+    margin-left: initial;
+  }
+
+  .current-plan img,
+  .current-plan div {
+    margin-right: 0;
+  }
+
+  .current-plan div,
+  .current-plan a {
+    margin-top: 10px;
+  }
+}
