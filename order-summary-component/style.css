@@ -209,7 +209,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 370px) {
   .current-plan {
     flex-flow: column;
   }
