@@ -87,7 +87,8 @@ body {
   font-size: 1rem;
 }
 
-p {
+p,
+h1 {
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -147,7 +148,7 @@ main {
   margin-bottom: 10px;
 }
 
-.profile div p {
+.profile div h1 {
   display: inline-block;
 }
 
