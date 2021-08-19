@@ -1,0 +1,263 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: center bottom;
+  background-color: #0C122C;
+  font-family: 'Raleway', sans-serif;
+  font-size: .875rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+header {
+  height: 130px;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-storage {
+  background-color: #1D2C67;
+  border-radius: 10px 110px 10px 10px;
+  flex-basis: 350px;
+  padding: 40px;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons div {
+  background-color: #0C122C;
+  border-radius: 5px;
+  flex-basis: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.icons div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icons img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.used-space {
+  background-color: #1D2C67;
+  border-radius: 10px;
+  flex-basis: 500px;
+  margin-left: 30px;
+  margin-top: 53px;
+  padding: 40px 40px;
+  position: relative;
+}
+
+.used-space .tooltip {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  position: absolute;
+  right: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  top: -50px;
+  width: 150px;
+}
+
+.used-space .tooltip::after {
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-top: 20px solid #fff;
+  bottom: -6px;
+  content: "";
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  position: absolute;
+  right: -12.5px;
+  transform: rotate(90deg);
+  width: 0;
+}
+
+.used-space .tooltip .large-bold {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.used-space .progress-bar {
+  color: #fff;
+  position: relative;
+}
+
+.used-space label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.used-space progress {
+  appearance: none;
+  background-color: #0C122C;
+  border:none;
+  border-radius: 10px;
+  height: 20px;
+  padding: 3px;
+  width: 100%; 
+}
+
+.used-space ::-moz-progress-bar {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.used-space ::-webkit-progress-bar {
+  background-color: #0C122C;
+  border-radius: 10px;
+}
+
+.used-space ::-webkit-progress-value {
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+}
+
+.used-space .progress-value {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+footer {
+  align-items: flex-end;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .used-space {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .used-space .tooltip {
+    right: 50%;
+    top: 85%;
+    transform: translateX(50%)
+  }
+
+  .used-space .tooltip::after {
+    content: initial;
+  }
+}

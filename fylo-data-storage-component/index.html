@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <main>
+        <div class="app-storage">
+        <div class="logo">
+          <h1><img src="images/logo.svg" alt="Logo"></h1>
+        </div>
+        <div class="icons">
+          <div><img src="images/icon-document.svg" alt=""></div>
+          <div><img src="images/icon-folder.svg" alt=""></div>
+          <div><img src="images/icon-upload.svg" alt=""></div>
+        </div>
+      </div><!-- App storage -->
+      <div class="used-space">
+        <div class="tooltip">
+          <span class="large-bold">185</span> <span>GB Left</span>
+        </div><!-- Tooltip -->
+        <div class="progress-bar">
+          <label for="file">You’ve used 815 GB of your storage</label>
+          <progress id="file" max="100" value="0">81.5%</progress>
+          <div class="progress-value">
+            <span>0 GB</span><span>1000 GB</span>
+          </div>
+        </div><!-- Progress bar -->
+      </div><!-- Used space -->
+      </main>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/ivobul">ivobul</a>.
+        </p>
+      </footer>
+    </div><!-- COntainer -->
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
