@@ -194,6 +194,10 @@ main {
   margin-bottom: 5px;
 }
 
+.used-space label .bold {
+  font-weight: bold;
+}
+
 .used-space progress {
   appearance: none;
   background-color: #0C122C;
