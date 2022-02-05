@@ -1,0 +1,137 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  background-color: #e2e3e4;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 30px;
+}
+
+.card {
+  background-color: hsl(0,0%,100%);
+  border-radius: 15px;
+  flex-basis: 288px;
+  padding: 15px;
+}
+
+.card__image {
+  border-radius: 7.5px;
+}
+
+.card__header,
+.card__body {
+  text-align: center;
+}
+
+.card__header {
+  margin-top: 15px;
+}
+
+.card__title {
+  color: hsl(216,4.4%,22.2%);
+}
+
+.card__body {
+  margin: 15px 0;
+}
+
+.card__copy {
+  color: hsl(218.8,14.8%,54.9%);
+  font-size: 0.9375rem;
+}
+
+.attribution {
+  font-size: .8rem; 
+  flex-basis: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.attribution__link { 
+  color: hsl(228, 45%, 44%); 
+}
