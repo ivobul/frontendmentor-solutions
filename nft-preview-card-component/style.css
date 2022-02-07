@@ -183,7 +183,6 @@ body {
 
 .card__footer {
   align-items: center;
-  color: hsl(0, 0%, 100%);
   display: flex;
   font-size: .9rem;
   margin-top: 15px;
@@ -200,21 +199,25 @@ body {
   color: hsl(215, 51%, 70%)
 }
 
-.card__author-link {
+.card__link {
   color: hsl(0, 0%, 100%);
   cursor: pointer;
   transition: all .3s;
 }
 
-.card__author-link:hover {
+.card__link:visited {
+  color: hsl(0, 0%, 100%);
+}
+
+.card__link:hover {
   color: hsl(178, 100%, 50%);
   transition: all .3s;
 }
 
 .attribution {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   flex-basis: 100%;
-  font-size: .8rem;
+  font-size: .9rem;
   margin-top: 20px;
   text-align: center;
 }
