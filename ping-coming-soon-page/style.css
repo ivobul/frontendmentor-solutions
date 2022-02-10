@@ -134,6 +134,7 @@ a {
 .main__input-submit {
   border-radius: 30px;
   height: 48px;
+  font-size: .9rem;
   padding: 5px 12px;
 }
 
