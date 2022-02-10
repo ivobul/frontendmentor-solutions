@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="The logo of the page">
+      </header>
+      <main class="main">
+        <h1 class="main__title">
+          <span class="main__title--color-gray main__title--font-lighter">We are launching</span> <span>soon!</span>
+        </h1>
+        <h2 class="main__subtitle main__subtitle--font-lighter">
+          Subscribe and get notified
+        </h2>
+        <form class="main__form" action="/" method="post" novalidate>
+          <input id="email" class="main__input-email" type="email" name="email" size="1" placeholder="Your email address ..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-label="Search Query">
+          <input class="main__input-submit" type="submit" value="Notify Me">
+          <span class="error" aria-live="polite"></span>
+        </form>
+        <img class="main__illustration" src="images/illustration-dashboard.png" alt="Dashboard">
+      </main>
+      <footer class="footer">
+        <div class="footer__social-share">
+          <i class="footer__icon fab fa-facebook-f"></i>
+          <i class="footer__icon fab fa-twitter"></i>
+          <i class="footer__icon fab fa-instagram"></i>
+        </div>
+        <div class="footer__text">
+          &copy; Copyright Ping. All rights reserved.
+        </div>
+      </footer>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

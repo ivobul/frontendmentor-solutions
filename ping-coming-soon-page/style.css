@@ -1,0 +1,244 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.body {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 60px 30px 30px;
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1;
+}
+
+.main__title,
+.main__subtitle {
+  text-align: center;
+}
+
+.main__title {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+.main__title--color-gray {
+  color: hsl(0, 2%, 49%);
+}
+
+.main__title--font-lighter,
+.main__subtitle--font-lighter {
+  font-weight: 300;
+}
+
+.main__subtitle {
+  margin-top: 8px;
+}
+
+.main__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.main__input-email,
+.main__input-submit {
+  border-radius: 30px;
+  height: 42px;
+  padding: 5px 12px;
+}
+
+.main__input-email {
+  border: 1px solid hsl(0, 0%, 59%);
+  flex: 2;
+  margin-right: 10px;
+  outline: none;
+}
+
+.main__input-submit {
+  border: none;
+  background-color: hsl(224, 89%, 47%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  flex: 1;
+}
+
+.main__input-submit:visited {
+  background-color: hsl(223, 87%, 63%);
+}
+
+.main__input-submit:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+
+.main__input-submit:active {
+  background-color: hsl(223, 47%, 71%);
+}
+
+.error {
+  color: hsl(354, 100%, 66%);
+  flex: 100%;
+  font-size: .9rem;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: none
+}
+
+.active {
+  display: initial;
+}
+
+.main__illustration {
+  display: block;
+  margin: 60px auto 0;
+  width: 500px;
+}
+
+.footer {
+  margin-top: 30px
+}
+
+.footer__social-share {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer__icon {
+  align-items: center;
+  border: 1px solid hsl(0, 11%, 89%);
+  border-radius: 50%;
+  color: hsl(223, 87%, 63%);
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.footer__icon:hover {
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.fa-facebook-f,
+.fa-twitter {
+  margin-right: 10px;
+}
+
+.footer__text {
+  color: hsl(0, 3%, 39%);
+  font-size: .9rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .main__input-email {
+    flex: 100%;
+    order: 1;
+    margin-right: 0;
+  }
+
+  .error {
+    margin-bottom: 10px;
+    order: 2;
+  }
+
+  .main__input-submit {
+    flex: 100%;
+    margin-top: 15px;
+    order: 3;
+  }
+}
