@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="page page--dark-mode">
+    <div class="container">
+      <div class="app">
+        <header class="page__header header">
+          <div class="header__item">
+            <h1 class="page__title color-white">Social Media Dashboard</h1>
+            <h2 class="page__subtitle color-desaturated-blue">Total Followers: 23,004</h2>
+          </div><!-- Header item -->
+          <div class="header__item">
+            <div class="theme-switcher">
+              <label class="theme-switcher__body theme-switcher__body--dark-mode" aria-hidden="true">
+                <span class="sr-only">Dark Mode</span>
+                <input type="checkbox" name="hidden" id="hidden" class="hidden">
+                <span class="inner-circle inner-circle--dark-mode"></span>
+              </label><!-- Theme switcher body -->
+              <span class="theme-switcher__label theme-switcher__label--dark-mode color-desaturated-blue bold">Dark Mode</span>
+            </div><!-- Theme switcher -->
+          </div><!-- Header item -->
+        </header><!-- Page header -->
+        <main class="page__main main">
+          <div class="main__row mt-40">
+            <div class="card card--dark-mode card-profile card-profile--color-facebook">
+              <div class="card-profile__item mb-15">
+                <img src="images/icon-facebook.svg" alt="" class="mr-10">
+                <p class="profile-name color-desaturated-blue bold">@nathanf</p>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item mb-20">
+                <h3 class="card-profile__title color-white">1987</h3>
+                <h4 class="card-profile__subtitle color-desaturated-blue">Followers</h4>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item">
+                <img src="images/icon-up.svg" alt="" class="mr-5">
+                <p class="positive bold">12 Today</p>
+              </div><!-- Card profile item -->
+            </div><!-- Card profile -->
+            <div class="card card--dark-mode card-profile card-profile--color-twitter">
+              <div class="card-profile__item mb-15">
+                <img src="images/icon-twitter.svg" alt="" class="mr-10">
+                <p class="profile-name color-desaturated-blue bold">@nathanf</p>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item mb-20">
+                <h3 class="card-profile__title color-white">1044</h3>
+                <h4 class="card-profile__subtitle color-desaturated-blue">Followers</h4>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item">
+                <img src="images/icon-up.svg" alt="" class="mr-5">
+                <p class="positive bold">99 Today</p>
+              </div><!-- Card profile item -->
+            </div><!-- Card profile -->
+            <div class="card card--dark-mode card-profile card-profile--color-instagram">
+              <div class="card-profile__item mb-15">
+                <img src="images/icon-instagram.svg" alt="" class="mr-10">
+                <p class="profile-name color-desaturated-blue bold">@realnathanf</p>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item mb-20">
+                <h3 class="card-profile__title color-white">11k</h3>
+                <h4 class="card-profile__subtitle color-desaturated-blue">Followers</h4>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item">
+                <img src="images/icon-up.svg" alt="" class="mr-5">
+                <p class="positive bold">1099 Today</p>
+              </div><!-- Card profile item -->
+            </div><!-- Card profile -->
+            <div class="card card--dark-mode card-profile card-profile--color-youtube">
+              <div class="card-profile__item mb-15">
+                <img src="images/icon-youtube.svg" alt="" class="mr-10">
+                <p class="profile-name color-desaturated-blue bold">Nathan F.</p>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item mb-20">
+                <h3 class="card-profile__title color-white">8239</h3>
+                <h4 class="card-profile__subtitle color-desaturated-blue">Subscribers</h4>
+              </div><!-- Card profile item -->
+              <div class="card-profile__item">
+                <img src="images/icon-down.svg" alt="" class="mr-5">
+                <p class="negative bold">144 Today</p>
+              </div><!-- Card profile item -->
+            </div><!-- Card profile -->
+          </div><!-- Row -->
+          <h2 class="page__main-title page__main-title--color-white">Overview - Today</h2>
+          <div class="main__row">
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Page Views</h3>
+                <h4 class="card-overview__subtitle color-white">87</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-facebook.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-up.svg" alt="" class="mr-5">
+                  <p class="positive bold">3%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Likes</h3>
+                <h4 class="card-overview__subtitle color-white">52</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-facebook.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-down.svg" alt="" class="mr-5">
+                  <p class="negative bold">2%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Likes</h3>
+                <h4 class="card-overview__subtitle color-white">5462</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-instagram.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-up.svg" alt="" class="mr-5">
+                  <p class="positive bold">2257%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Profile Views</h3>
+                <h4 class="card-overview__subtitle color-white">52k</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-instagram.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-up.svg" alt="" class="mr-5">
+                  <p class="positive bold">1375%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+          </div><!-- Row -->
+          <div class="main__row">
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Retweets</h3>
+                <h4 class="card-overview__subtitle color-white">117</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-twitter.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-up.svg" alt="" class="mr-5">
+                  <p class="positive bold">303%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Likes</h3>
+                <h4 class="card-overview__subtitle color-white">507</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-twitter.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-up.svg" alt="" class="mr-5">
+                  <p class="positive bold">553%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Likes</h3>
+                <h4 class="card-overview__subtitle color-white">107</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-youtube.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-down.svg" alt="" class="mr-5">
+                  <p class="negative bold">19%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+            <div class="card card--dark-mode card-overview">
+              <div class="card-overview__item">
+                <h3 class="card-overview__title color-desaturated-blue">Total Views</h3>
+                <h4 class="card-overview__subtitle color-white">1407</h4>
+              </div><!-- Card overview item -->
+              <div class="card-overview__item">
+                <img src="images/icon-youtube.svg" alt="">
+                <div class="trend">
+                  <img src="images/icon-down.svg" alt="" class="mr-5">
+                  <p class="negative bold">12%</p>
+                </div>
+              </div><!-- Card overview item -->
+            </div><!-- Card overview -->
+          </div><!-- Row -->
+        </main><!-- Page main -->
+        <footer class="page__footer footer">
+          <div class="footer__attribution footer__attribution--dark-mode">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__link">Frontend Mentor</a>. 
+            Coded by 
+            <a href="https://github.com/ivobul" class="footer__link">ivobul</a>.
+          </div>
+        </footer>
+      </div><!-- App -->
+    </div><!-- Container -->
+    <script src="script.js"></script>
+  </body>
+</html>
