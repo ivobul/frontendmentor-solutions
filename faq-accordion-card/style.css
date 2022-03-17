@@ -1,0 +1,253 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-size: 0.85rem;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.card {
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-color: hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -430px -210px;
+  border-radius: 20px;
+  display: flex;
+  flex-basis: 700px;
+  flex-wrap: wrap;
+}
+
+.card__illustration {
+  background-image: url(images/illustration-woman-online-desktop.svg);
+  background-position: -60px 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 1;
+  position: relative;
+  height: 350px;
+}
+
+.card__illustration-woman-mobile {
+  display: none;
+} 
+
+.card__illustration-box-desktop {
+  bottom: 85px;
+  height: auto;
+  left: -65px;
+  position: absolute;
+  width: 130px;
+}
+
+.card__body {
+  color: #6C6C79;
+  flex: 1;
+  padding: 50px 50px 50px 0;
+}
+
+.card__row {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 10px 0;
+}
+
+.card__body-title {
+  color: hsl(237, 12%, 33%);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card__body-question {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__body-question:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.card__body-question--clicked {
+  color: hsl(237, 12%, 33%);
+  font-weight: bold;
+}
+
+.card__body-answer {
+  height: 0;
+  opacity: 0;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: all .3s ease;
+}
+
+.active + .card__body-answer {
+  height: 100%;
+  margin: 10px 0 0;
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all .6s ease;
+}
+
+.arrow {
+  transform: rotate(0deg);
+  margin-left: 10px;
+}
+
+.active .arrow {
+  transform: rotate(180deg)
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 200px 20px 50px;
+  }
+  
+  .card {
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-position: center top;
+    background-size: 350px auto;
+    background-origin: border-box;
+    padding: 0 30px 50px;
+  }
+
+  .card__illustration,
+  .card__body {
+    flex: 100%;
+  }
+
+  .card__illustration {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    max-height: 150px;
+  }
+  
+  .card__illustration-woman-mobile {
+    display: flex;
+    height: auto;
+    margin-top: -210px;
+    width: 350px;
+  } 
+
+  .card__illustration-box-desktop {
+    display: none;
+  }
+  
+  .card__body {
+    padding: 0;
+  }
+
+  .card__body-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 200px 20px 120px;
+  }
+
+  .card {
+    background-size: 230px auto;
+  }
+  
+  .card__illustration-woman-mobile {
+    margin-top: -180px;
+    width: 200px;
+  } 
+  
+  .card__body-title {
+    margin-top: 0;
+  }
+}
