@@ -78,7 +78,7 @@ a {
 }
 
 /* Basic rules */
-.page {
+body {
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-size: 0.85rem;
   font-family: 'Kumbh Sans', sans-serif;
@@ -92,6 +92,11 @@ a {
   padding: 40px 20px;
 }
 
+.page__main {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   background-image: url(images/bg-pattern-desktop.svg);
   background-color: hsl(0, 0%, 100%);
@@ -99,6 +104,8 @@ a {
   background-size: cover;
   background-position: -430px -210px;
   border-radius: 20px;
+  -webkit-box-shadow: 0px 12px 18px 12px rgba(94,78,202,0.82); 
+  box-shadow: 0px 12px 18px 12px rgba(94,78,202,0.82);
   display: flex;
   flex-basis: 700px;
   flex-wrap: wrap;
