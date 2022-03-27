@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="page-header">
+        <div class="page-header__top">
+          <a href="" class="page-header__logo">
+            <img src="images/logo.svg" alt="Site logo">
+          </a>
+          <img src="images/icon-hamburger.svg" alt="" class="hamburger-menu">
+          <nav class="page-header__nav">
+            <a href="" class="page-header__nav-item">About</a>
+            <a href="" class="page-header__nav-item">Services</a>
+            <a href="" class="page-header__nav-item">Projects</a>
+            <a href="" class="page-header__nav-item page-header__nav-item--alternate-design">Contact</a>
+          </nav>
+        </div><!-- Page header top -->
+        <div class="page-header__hero">
+          <h1 class="page-header__title">We are creatives</h1>
+          <img src="images/icon-arrow-down.svg" alt="" class="page-header__icon">
+        </div><!-- Page header hero section -->
+      </header>
+      <main class="page-main">
+        <article class="article">
+          <div class="article__item  article__item--vertical-center flex-order-x">
+            <div class="article__stack">
+              <h2 class="article__title">Transform your brand</h2>
+              <p class="article__copy article__copy--color-grey">
+              We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+              </p>
+              <a href="" class="article__link underline underline--color-yellow">Learn more</a>
+            </div><!-- Stack -->
+          </div><!-- Article item -->
+          <div class="article__item bg-img-transform flex-order-y"></div><!-- Article item -->
+        </article>
+        <article class="article">
+          <div class="article__item bg-img-standout"></div><!-- Article item -->
+          <div class="article__item article__item--vertical-center">
+            <div class="article__stack">
+              <h2 class="article__title">Stand out to the right audience</h2>
+              <p class="article__copy article__copy--color-grey">
+              Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+              </p>
+              <a href="" class="article__link underline underline--color-red">Learn more</a>
+            </div><!-- Stack -->
+          </div><!-- Article item -->
+        </article>
+        <article class="article">
+          <div class="article__item bg-img-graphic-design">
+            <div class="article__stack article__stack--vertical-bottom article__stack--color-darkcyan">
+              <h2 class="article__title article__title--text-center">Graphic design</h2>
+              <p class="article__copy article__copy--text-center">
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+              </p>
+            </div><!-- Stack -->
+          </div><!-- Article item -->
+          <div class="article__item bg-img-photography">
+            <div class="article__stack article__stack--vertical-bottom article__stack--color-darkblue">
+              <h2 class="article__title article__title--text-center">Photography</h2>
+              <p class="article__copy article__copy--text-center">
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+              </p>
+            </div><!-- Stack -->
+          </div><!-- Article item -->
+        </article>
+        <aside class="page-aside">
+          <h2 class="page-aside__title">Client testimonials</h2>
+          <div class="page-aside__stack">
+            <div class="card">
+              <div class="card__header">
+                <img src="images/image-emily.jpg" alt="" class="card__avatar">
+              </div>
+              <div class="card__body">
+                <p class="card__copy">
+                We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                </p>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title">Emily R.</h3>
+                <p class="card__subtitle">Marketing Director</p>
+              </div>
+            </div><!-- Card -->
+            <div class="card">
+              <div class="card__header">
+                <img src="images/image-thomas.jpg" alt="" class="card__avatar">
+              </div>
+              <div class="card__body">
+                <p class="card__copy">
+                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                </p>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title">Thomas S.</h3>
+                <p class="card__subtitle">Chief Operating Officer</p>
+              </div>
+            </div><!-- Card -->
+            <div class="card">
+              <div class="card__header">
+                <img src="images/image-jennie.jpg" alt="" class="card__avatar">
+              </div>
+              <div class="card__body">
+                <p class="card__copy">
+                  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                </p>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title">Jennie F.</h3>
+                <p class="card__subtitle">Business Owner</p>
+              </div>
+            </div><!-- Card -->
+          </div><!-- Stack -->
+        </aside>
+        <figure class="figure">
+          <picture class="picture">
+           <source srcset="images/desktop/image-gallery-milkbottles.jpg" type="image/jpg" media="(min-width:768px)"> 
+           <source srcset="images/mobile/image-gallery-milkbottles.jpg" type="image/jpg" media="(max-width:767px)">
+            <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" class="picture__item">
+          </picture><!-- Picture -->
+          <picture class="picture">
+           <source srcset="images/desktop/image-gallery-orange.jpg" type="image/jpg" media="(min-width:768px)"> 
+           <source srcset="images/mobile/image-gallery-orange.jpg" type="image/jpg" media="(max-width:767px)">
+            <img src="images/desktop/image-gallery-orange.jpg" alt="" class="picture__item">
+          </picture><!-- Picture -->
+          <picture class="picture">
+           <source srcset="images/desktop/image-gallery-cone.jpg" type="image/jpg" media="(min-width:768px)"> 
+           <source srcset="images/mobile/image-gallery-cone.jpg" type="image/jpg" media="(max-width:767px)">
+            <img src="images/desktop/image-gallery-cone.jpg" alt="" class="picture__item">
+          </picture><!-- Picture -->
+          <picture class="picture">
+            <source srcset="images/desktop/image-gallery-sugarcubes.jpg" type="image/jpg" media="(min-width:768px)"> 
+            <source srcset="images/mobile/image-gallery-sugarcubes.jpg" type="image/jpg" media="(max-width:767px)">
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" class="picture__item">
+          </picture><!-- Picture -->
+        </figure>
+      </main>
+      <footer class="page-footer">
+        <img src="images/logo.svg" alt="Site logo" class="page-footer__logo">
+        <div class="page-footer__nav">
+          <a href="" class="page-footer__nav-item">About</a>
+          <a href="" class="page-footer__nav-item">Services</a>
+          <a href="" class="page-footer__nav-item">Projects</a>
+        </div>
+        <div class="page-footer__stack">
+          <a href="" class="page-footer__stack-item">
+            <img src="images/icon-facebook.svg" alt="Facebook icon" class="page-footer__icon">
+          </a>
+          <a href="" class="page-footer__stack-item">
+            <img src="images/icon-instagram.svg" alt="Instagram icon" class="page-footer__icon">
+          </a>
+          <a href="" class="page-footer__stack-item">
+            <img src="images/icon-twitter.svg" alt="Twitter icon" class="page-footer__icon">
+          </a>
+          <a href="" class="page-footer__stack-item">
+            <img src="images/icon-pinterest.svg" alt="Pinterest icon" class="page-footer__icon">
+          </a>
+        </div><!-- Stack -->
+      </footer> 
+    </div><!-- Container -->
+  
+    <script src="script.js"></script>
+  </body>
+</html>
