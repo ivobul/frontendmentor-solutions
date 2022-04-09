@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <div class="container">
+      <main class="page-main">
+        <div class="component">
+          <div class="component__icon">
+            <img src="images/icon-star.svg" alt="Star icon">
+          </div>
+          <h1 class="component__title">How did we do?</h1>
+          <p class="component__copy">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+          </p>
+          <form action="thank-you.html" method="post" class="component__form form">
+            <input type="radio" id="one" class="form__radio" name="rating" value="1" required>
+            <label for="one" class="form__label">1</label>
+            <input type="radio" id="two" class="form__radio" name="rating" value="2">
+            <label for="two" class="form__label">2</label>
+            <input type="radio" id="three" class="form__radio" name="rating" value="3">
+            <label for="three" class="form__label">3</label>
+            <input type="radio" id="four" class="form__radio" name="rating" value="4">
+            <label for="four" class="form__label">4</label>
+            <input type="radio" id="five" class="form__radio" name="rating" value="5">
+            <label for="five" class="form__label">5</label>
+            <input type="submit" class="form__submit" value="Submit">
+          </form>
+        </div><!-- Component -->
+      </main>
+    </div><!-- Container -->
+  
+    <script src="script.js"></script>
+  </body>
+</html>
