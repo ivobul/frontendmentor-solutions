@@ -1,0 +1,674 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  color: hsl(0, 0%, 0%);
+  font-family: 'Alata', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-header__title,
+.about__title,
+.products__title,
+.grid-item__title {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Page header */
+.page-header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  min-height: 670px;
+  padding: 60px 80px 100px;
+}
+
+.page-header__top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__mobile {
+  display: none;
+}
+
+.page-header__list {
+  display: flex;
+}
+
+.page-header__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.page-header__list-link {
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  transition: .3s;
+}
+
+.page-header__list-link:visited {
+  color: hsl(0, 0%, 100%);
+}
+
+.page-header__list-link:hover::after {
+  background-color: hsl(0, 0%, 100%);
+  bottom: -12px;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: .5s;
+  width: 50%;
+}
+
+/* Off-canvas menu */
+.side-nav {
+  background-color: hsl(0, 0%, 0%);
+  height: 100%;
+  overflow-x: hidden;
+  padding: 40px;
+  position: fixed;
+  right: -9999px;
+  top: 0;
+  transition: .6s;
+  width: 0;
+  z-index: 1;
+}
+
+.side-nav__top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-nav__image {
+  width: 160px;
+}
+
+.side-nav__body {
+  margin-top: 50px;
+}
+
+.side-nav__link {
+  color: hsl(0, 0%, 100%);
+  display: block;
+  font-size: 1.2rem;
+}
+
+.side-nav__link:visited {
+  color: hsl(0, 0%, 100%);
+}
+
+.side-nav__link:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* Page header body */
+.page-header__body {
+  margin-top: 100px;
+}
+
+.page-header__title {
+  border: 2px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  font-size: 3.5rem;
+  max-width: 600px;
+  padding: 40px 60px;
+}
+
+/* Page main */
+.page-main {
+  flex: 1;
+  padding: 80px;
+}
+
+/* Page main - about section */
+.about {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.about__intro {
+  background-color: hsl(0, 0%, 100%);
+  flex-basis: 610px;
+  padding: 80px;
+  margin-top: 180px;
+  margin-left: -180px;
+}
+
+.about__title {
+  font-size: 2.5rem;
+}
+
+.about__copy {
+  color: hsl(0, 0%, 41%);
+  font-size: .9375rem;
+  margin-top: 5px;
+}
+
+/* Page main - products section */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products__title {
+  font-size: 2.5rem;
+  flex: 1;
+  order: 1;
+}
+
+.products__link {
+  order: 2;
+}
+
+.button {
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 3px;
+  color: hsl(0, 0%, 0%);
+  display: flex;
+  font-weight: bold;
+  height: 46px;
+  letter-spacing: 3px;
+  padding: 9px 24px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.button:hover {
+  border: 2px solid transparent;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+}
+
+.products__gallery {
+  flex: 100%;
+  margin-top: 30px;
+  order: 3
+}
+
+.grid-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  grid-auto-rows: 450px;
+}
+
+.grid-item {
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  padding: 35px;
+  transition: .3s;
+}
+
+.grid-item:hover {
+  color: hsl(0, 0%, 0%);
+  transition: .5s;
+}
+
+.grid-item__title {
+  font-size: 2rem;
+  font-weight: 300;
+  max-width: 145px;
+}
+
+.grid-item__title--wider {
+  max-width: 165px;
+}
+
+.item-1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-deep-earth.jpg);
+  transition: .3s;
+}
+
+.item-1:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-deep-earth.jpg);
+  transition: .5s;
+}
+
+.item-2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-night-arcade.jpg);
+  transition: .3s;
+}
+
+.item-2:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-night-arcade.jpg);
+  transition: .5s;
+}
+
+.item-3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-soccer-team.jpg);
+  transition: .3s;
+}
+
+.item-3:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-soccer-team.jpg);
+  transition: .5s;
+}
+
+.item-4 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-grid.jpg);
+  transition: .3s;
+}
+
+.item-4:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-grid.jpg);
+  transition: .5s;
+}
+
+.item-5 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-from-above.jpg);
+  transition: .3s;
+}
+
+.item-5:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-from-above.jpg);
+  transition: .5s;
+}
+
+.item-6 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-pocket-borealis.jpg);
+  transition: .3s;
+}
+
+.item-6:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-pocket-borealis.jpg);
+  transition: .5s;
+}
+
+.item-7 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-curiosity.jpg);
+  transition: .3s;
+}
+
+.item-7:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-curiosity.jpg);
+  transition: .5s;
+}
+
+.item-8 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/desktop/image-fisheye.jpg);
+  transition: .3s;
+}
+
+.item-8:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/desktop/image-fisheye.jpg);
+  transition: .5s;
+}
+
+/* Page footer */
+.page-footer {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+}
+
+.page-footer__list {
+  display: flex;
+}
+
+.page-footer__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.page-footer__list-link {
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  transition: .3s;
+}
+
+.page-footer__list-link:visited {
+  color: hsl(0, 0%, 100%);
+}
+
+.page-footer__list-link:hover::after {
+  background-color: hsl(0, 0%, 100%);
+  bottom: -12px;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: .5s;
+  width: 50%;
+}
+
+.page-footer__logo {
+  height: 31px;
+}
+
+.page-footer__copy {
+  color: hsl(0, 0%, 55%);
+}
+
+
+.page-footer__logo,
+.page-footer__social {
+  margin-bottom: 20px;
+}
+
+.page-footer__social-link {
+  cursor: pointer;
+  position: relative;
+  transition: .3s;
+}
+
+.page-footer__social-link:hover::after {
+  background-color: hsl(0, 0%, 100%);
+  bottom: -12px;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: .5s;
+  width: 50%;
+}
+
+.page-footer__social-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+  .page-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(images/mobile/image-hero.jpg);
+    min-height: 480px;
+    padding: 60px 40px 100px;
+  }
+  
+  .page-header__nav {
+    display: none;
+  }
+  
+  .page-header__mobile {
+    cursor: pointer;
+    display: initial;
+    margin-bottom: 1px;
+  }
+  
+  .page-header__title {
+    font-size: 3rem;
+    max-width: 100%;
+    padding: 40px 60px;
+  }
+
+  .page-main {
+    padding: 80px 40px;
+  }
+
+  .about {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  .about__media {
+    flex-basis: 100%;
+  }
+
+  .about__image {
+    display: block;
+    width: 100%;
+  }
+
+  .about__intro {
+    flex-basis: 100%;
+    padding: 60px 40px;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .products {
+    justify-content: center;
+  }
+
+  .products__title {
+    text-align: center;
+  }
+  
+  .products__link {
+    margin-top: 50px;
+    order: 3;
+    text-align: center;
+  }
+
+  .button {
+    height: 60px;
+    padding: 9px 60px;
+  }
+  
+  .products__gallery {
+    order: 2
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 246px;
+  }
+
+  .grid-item {
+    background-position: center top;
+  }
+
+  .item-1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-deep-earth.jpg);
+  }
+
+  .item-1:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-deep-earth.jpg);
+  }
+
+  .item-2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-night-arcade.jpg);
+  }
+
+  .item-2:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-night-arcade.jpg);
+  }
+
+  .item-3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-soccer-team.jpg);
+  }
+
+  .item-3:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-soccer-team.jpg);
+  }
+
+  .item-4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-grid.jpg);
+  }
+
+  .item-4:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-grid.jpg);
+  }
+
+  .item-5 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-from-above.jpg);
+  }
+
+  .item-5:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-from-above.jpg);
+  }
+
+  .item-6 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-pocket-borealis.jpg);
+  }
+
+  .item-6:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-pocket-borealis.jpg);
+  }
+
+  .item-7 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-curiosity.jpg);
+  }
+
+  .item-7:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-curiosity.jpg);
+  }
+
+  .item-8 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/mobile/image-fisheye.jpg);
+  }
+
+  .item-8:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .7) 100%), url(images/mobile/image-fisheye.jpg);
+  }
+
+  .page-footer {
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .page-footer__list {
+    flex-direction: column;
+  }
+
+  .page-footer__list-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .page-footer__social {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-header {
+    padding: 60px 20px 100px;
+  }
+
+  .page-header__title {
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .page-main {
+    flex: 1;
+    padding: 80px 20px;
+  }
+  
+  .about__intro {
+    padding: 60px 5px;
+  }
+
+  .about__title,
+  .products__title {
+    font-size: 1.7rem;
+  }
+
+  .grid-item__title {
+    font-size: 1.5rem;
+    max-width: 110px;
+  }
+
+  .grid-item__title--wider {
+    max-width: 155px;
+  }
+
+  .page-footer {
+    padding: 40px 20px;
+  }
+}

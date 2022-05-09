@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="page-header">
+        <div class="page-header__top">
+          <a href="" class="page-header__logo">
+            <img src="images/logo.svg" alt="Site Logo">
+          </a>
+          <a href="javascript:void(0)" class="page-header__mobile">
+            <img src="images/icon-hamburger.svg" alt="Mobile menu icon">
+          </a>
+          <nav class="page-header__nav" aria-label="Main">
+            <ul class="page-header__list">
+              <li class="page-header__list-item">
+                <a href="" class="page-header__list-link">About</a>
+              </li>
+              <li class="page-header__list-item">
+                <a href="" class="page-header__list-link">Careers</a>
+              </li>
+              <li class="page-header__list-item">
+                <a href="" class="page-header__list-link">Events</a>
+              </li>
+              <li class="page-header__list-item">
+                <a href="" class="page-header__list-link">Products</a>
+              </li>
+              <li class="page-header__list-item">
+                <a href="" class="page-header__list-link">Support</a>
+              </li>
+            </ul><!-- Page header list -->
+          </nav><!-- Page header navigation -->
+          <div class="side-nav" role="navigation" aria-label="Off-canvas">
+            <div class="side-nav__top">
+              <a href="" class="side-nav__logo">
+                <img src="images/logo.svg" alt="Site logo" class="side-nav__image">
+              </a>
+              <a href="javascript:void(0)" class="side-nav__closebtn">
+                <img src="images/icon-close.svg" alt="Close icon">
+              </a>
+            </div><!-- Side navigation top -->
+            <div class="side-nav__body">
+              <a href="#" class="side-nav__link">About</a>
+              <a href="#" class="side-nav__link">Careers</a>
+              <a href="#" class="side-nav__link">Events</a>
+              <a href="#" class="side-nav__link">Products</a>
+              <a href="#" class="side-nav__link">Support</a>
+            </div><!-- Side navigation body -->
+          </div>
+        </div><!-- Page header top -->
+        <div class="page-header__body">
+          <h1 class="page-header__title">Immersive experiences that deliver</h1>
+        </div><!-- Page header body -->
+      </header><!-- Page header -->
+      <main class="page-main">
+        <section class="about">
+           <picture class="about__media">
+            <source media="(min-width:992px)" srcset="images/desktop/image-interactive.jpg">
+            <source media="(max-width:991px)" srcset="images/mobile/image-interactive.jpg">
+            <img src="images/desktop/image-interactive.jpg" alt="" class="about__image">
+          </picture><!-- About media section -->
+          <div class="about__intro">
+            <h2 class="about__title">The leader in interactive VR</h2>
+            <p class="about__copy">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+          </div><!-- About intro section -->
+        </section><!-- About section -->
+        <section class="products">
+          <h2 class="products__title">Our creations</h2>
+          <a href="" class="products__link button">See all</a>
+          <div class="products__gallery grid-container">
+            <div class="grid-item item-1">
+              <h3 class="grid-item__title">Deep earth</h3>
+            </div>
+            <div class="grid-item item-2">
+              <h3 class="grid-item__title">Night arcade</h3>
+            </div>
+            <div class="grid-item item-3">
+              <h3 class="grid-item__title">Soccer team VR</h3>
+            </div>
+            <div class="grid-item item-4">
+              <h3 class="grid-item__title">The grid</h3>
+            </div>
+            <div class="grid-item item-5">
+              <h3 class="grid-item__title grid-item__title--wider">From up above VR</h3>
+            </div>
+            <div class="grid-item item-6">
+              <h3 class="grid-item__title">Pocket borealis</h3>
+            </div>
+            <div class="grid-item item-7">
+              <h3 class="grid-item__title">The curiosity</h3>
+            </div>
+            <div class="grid-item item-8">
+              <h3 class="grid-item__title">Make it fisheye</h3>
+            </div>
+          </div><!-- Products gallery section -->
+        </section><!-- Products section -->
+      </main><!-- Page main -->
+      <footer class="page-footer">
+        <div class="page-footer__section">
+          <div class="page-footer__logo">
+            <img src="images/logo.svg" alt="">
+          </div>
+          <nav class="page-footer__nav" aria-label="Main">
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item">
+                <a href="" class="page-footer__list-link">About</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a href="" class="page-footer__list-link">Careers</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a href="" class="page-footer__list-link">Events</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a href="" class="page-footer__list-link">Products</a>
+              </li>
+              <li class="page-footer__list-item">
+                <a href="" class="page-footer__list-link">Support</a>
+              </li>
+            </ul>
+          </nav><!-- Page footer navigation -->
+        </div><!-- Page footer section -->
+        <div class="page-footer__section">
+          <div class="page-footer__social">
+            <a class="page-footer__social-link">
+              <img src="images/icon-facebook.svg" alt="Facebook icon" class="page-footer__image">
+            </a>
+            <a class="page-footer__social-link">
+              <img src="images/icon-twitter.svg" alt="Twitter icon" class="page-footer__image">
+            </a>
+            <a class="page-footer__social-link">
+              <img src="images/icon-pinterest.svg" alt="Pinterest icon" class="page-footer__image">
+            </a>
+            <a class="page-footer__social-link">
+              <img src="images/icon-instagram.svg" alt="Instagram icon" class="page-footer__image">
+            </a>
+          </div><!-- Page footer social icons -->
+          <div class="page-footer__copy">© 2022 Loopstudios. All rights reserved.</div>
+        </div><!-- Page footer section -->
+      </footer><!-- Page footer -->
+    </div><!-- Container -->
+   
+    <script src="script.js"></script>
+  </body>
+</html>
