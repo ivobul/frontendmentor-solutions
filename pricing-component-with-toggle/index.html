@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Pricing component with toggle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div class="container">
+      <main class="page-main">
+        <div class="app">
+          <h1 class="app__title">Our Pricing</h1>
+          <div class="app__toggle-switch toggle-switch">
+            <label class="toggle-switch__body" aria-hidden="true">
+              <span class="sr-only">Toggle switch</span>
+              <input type="checkbox" name="hidden" id="hidden" class="hidden" checked>
+              <span class="inner-circle inner-circle--annually"></span>
+            </label><!-- Toggle switch body -->
+          </div><!-- App toggle switch section -->
+          <div class="app__table table">
+            <div class="table__item table__item--basic">
+              <h2 class="table__title">Basic</h2>
+              <p class="table__copy">
+                <span class="dollar-sign">&dollar;</span>
+                <span id="price-basic" class="price">199.99</span>
+              </p>
+              <p class="table__copy">500 GB Storage</p>
+              <p class="table__copy">2 Users Allowed</p>
+              <p class="table__copy">Send up to 3 GB</p>
+              <a href="" class="button button--basic">Learn More</a>
+            </div><!-- Table item basic -->
+            <div class="table__item table__item--professional">
+              <h2 class="table__title">Professional</h2>
+              <p class="table__copy">
+                <span class="dollar-sign">&dollar;</span>
+                <span id="price-professional" class="price">249.99</span>
+              </p>
+              <p class="table__copy">1 TB Storage</p>
+              <p class="table__copy">5 Users Allowed</p>
+              <p class="table__copy">Send up to 10 GB</p>
+              <a href="" class="button button--professional">Learn More</a>
+            </div><!-- Table item professional -->
+            <div class="table__item table__item--master">
+              <h2 class="table__title">Master</h2>
+              <p class="table__copy">
+                <span class="dollar-sign">&dollar;</span>
+                <span id="price-master" class="price">399.99</span>
+              </p>
+              <p class="table__copy">2 TB Storage</p>
+              <p class="table__copy">10 Users Allowed</p>
+              <p class="table__copy">Send up to 20 GB</p>
+              <a href="" class="button button--master">Learn More</a>
+            </div><!-- Table item master -->
+          </div><!-- App table -->
+        </div><!-- App -->
+      </main><!-- Page main -->
+    </div><!-- Container -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,326 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-color: hsl(240, 78%, 98%);
+  background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, left bottom;
+  color: hsl(232, 13%, 33%);
+  font-size: .9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  padding: 40px 30px;
+}
+
+/* Page main */
+.page-main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+/* App */
+.app {
+  flex: 1;
+}
+
+.app__title {
+  color: hsl(232, 13%, 33%);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* App toggle switch */
+.app__toggle-switch {
+  margin-top: 30px;
+}
+
+.toggle-switch {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-switch__body {
+  align-items: center;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  height: 28px;
+  padding: 5px;
+  position: relative;
+  transition: all .5s ease;
+  width: 70px;
+}
+
+.toggle-switch__body:hover {
+  background-image: linear-gradient(#9d9fea,#9d9fea);
+  transition: all .5s ease;
+}
+
+.toggle-switch__body::before {
+  color: #8f909e;
+  content: "Annually";
+  position: absolute;
+  right: 90px;
+}
+
+.toggle-switch__body::after {
+  color: #8f909e;
+  content: "Monthly";
+  left: 90px;
+  position: absolute;
+}
+
+.inner-circle {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  transition: all .5s ease;
+  width: 20px;
+}
+
+.inner-circle--annually {
+  left: 5px;
+}
+
+.inner-circle--monthly {
+  left: 45px;
+}
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; 
+}
+
+.hidden {
+  display: none;
+}
+
+/* App table */
+.app__table {
+  max-width: 800px;
+  margin: 60px auto 0; 
+}
+
+.table {
+  filter: drop-shadow(0.1rem 0.2rem 0.55rem rgba(194, 194, 194, .7));
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table__item {
+  display: inline-block;
+  margin-right: -4px;
+  width: 33.3333%;
+  white-space: normal;
+}
+
+.table__item--professional {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 12px;
+  color: #fff;
+  padding: 40px 25px;
+}
+
+.table__item--basic,
+.table__item--master {
+  background-color: #fff;
+  padding: 25px; 
+}
+
+.table__item--basic {
+  border-radius: 12px 0 0 12px;
+}
+
+.table__item--master {
+  border-radius: 0 12px 12px 0;
+}
+
+.table__copy {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  padding: 15px 0;
+}
+
+.dollar-sign {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-right: 5px;
+  vertical-align: 6px;
+}
+
+.price {
+  display: inline-block;
+  font-size: 2.8rem;
+}
+
+.button {
+  border-radius: 6px;
+  display: block;
+  font-size: .8rem;
+  margin-top: 25px;
+  padding: 9px 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.button--basic,
+.button--master {
+  background-color: #7479e1;
+  border:1px solid #7479e1;
+  color: #fff;
+  transition: all .5s ease;
+}
+
+.button--basic:visited,
+.button--master:visited {
+  color: #fff;
+}
+
+.button--basic:hover,
+.button--master:hover {
+  background-color: #fff;
+  border: 1px solid hsl(234, 14%, 74%);
+  color: hsl(237, 63%, 64%);
+  transition: all .5s ease;
+}
+
+.button--professional {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: hsl(237, 63%, 64%);
+  transition: all .5s ease;
+}
+
+.button--professional:visited {
+  color: hsl(237, 63%, 64%);
+}
+
+.button--professional:hover {
+  background-color:  #7479e1;
+  color: #fff;
+  transition: all .5s ease;
+}
+
+@media (max-width: 767px) {
+  .table {
+    white-space: normal;
+  }
+
+  .table__item {
+    display: block;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .table__item:not(:last-child)  {
+    margin-bottom: 30px;
+  }
+
+  .table__item--basic,
+  .table__item--professional,
+  .table__item--master{
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 376px) {
+  .dollar-sign {
+    font-size: 1.4rem;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+  }
+}
