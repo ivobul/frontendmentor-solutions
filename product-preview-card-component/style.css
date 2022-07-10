@@ -1,0 +1,206 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.card {
+  display: flex;
+  flex-basis: 600px;
+}
+
+.card__left {
+  background-image: url(images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+  flex: 50%;
+}
+
+.card__right {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 10px 10px 0;
+  flex: 50%;
+  padding: 30px;
+}
+
+.card__title {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-family: 'Fraunces', serif;
+  font-size: 2.1rem;
+  line-height: 1.1;
+  margin-top: 20px;
+}
+
+.card__copy {
+  color: hsl(228, 12%, 48%);
+  font-size: .875rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.card__stack {
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.card__price {
+  flex: 1;
+}
+
+.card__price--new {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card__price--old {
+  color: hsl(228, 12%, 48%);
+  font-size: .875rem;
+  font-weight: 500;
+  margin-left: 20px;
+  text-decoration: line-through;
+}
+
+.card__btn {
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 14px 20px;
+  transition: background-color .8s;
+  width: 100%;
+}
+
+.card__btn:hover {
+  background-color: hsl(158, 36%, 22%);
+}
+
+.btn-text {
+  font-size: .875rem;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex-wrap: wrap;
+  }
+
+  .card__left,
+  .card__right {
+    flex: 100%
+  }
+
+  .card__left {
+    background-image: url(images/image-product-mobile.jpg);
+    background-position: center top;
+    border-radius: 10px 10px 0 0;
+    height: 60vh;
+  }
+
+  .card__right {
+    border-radius: 0 0 10px 10px;
+  }
+}
