@@ -1,10 +1,10 @@
 # Frontend Mentor | Solutions
 
-[1. 3 Column Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/3-column-preview-card-component/)
+[1. 3-Column Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/3-column-preview-card-component/)
 
 [2. Advice Generator App](https://ivobul.github.io/frontendmentor-solutions/advice-generator-app/)
 
-[3. Faq Accordion Card](https://ivobul.github.io/frontendmentor-solutions/faq-accordion-card/)
+[3. FAQ Accordion Card](https://ivobul.github.io/frontendmentor-solutions/faq-accordion-card/)
 
 [4. Four Card Feature Section](https://ivobul.github.io/frontendmentor-solutions/four-card-feature-section/)
 
