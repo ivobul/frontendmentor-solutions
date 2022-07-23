@@ -162,13 +162,6 @@ body {
 
 .profile span {
   display: block;
-}
-
-.profile span:first-child {
-  font-weight: 700;
-}
-
-.profile span:last-child {
   opacity: 0.5; 
 }
 
