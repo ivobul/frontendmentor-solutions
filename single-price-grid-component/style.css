@@ -84,178 +84,146 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.2rem;
-}
-
-h3 {
-  font-size: 1rem;
-}
-
 .container {
-  align-content: center;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
   min-height: 100vh;
-  padding: 2.5rem 1.5rem;
+  padding: 40px 20px;
 }
 
-/* The single price grid component */ 
-.price-grid {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-  display: flex;
+/* App component */ 
+.app {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   flex-basis: 650px;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
-/* The introduction section */
-.intro {
-  border-radius: 5px 5px 0 0;
+/* App header section */
+.app__header {
   background-color: #fff;
-  padding: 2.1rem;
+  border-radius: 8px 8px 0 0;
+  padding: 40px;
 }
 
-.intro h1 {
+.app__header-title {
   color: #2ab2af;
-  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  padding-bottom: 16px;
 }
 
-.intro h2 {
+.app__header-subtitle {
   color: #c0df34;
-  padding-bottom: .7rem;
+  font-size: 1.2rem;
+  padding-bottom: 11.2px;
 }
 
-.intro p {
-  color: gray;
-  line-height: 1.5;
+.app__header-copy {
+  color: hsl(218, 22%, 67%);
 }
 
-/* The main container */
-.main {
+/* App main */
+.app__main {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.main h2 {
-  color: #fff;
-  padding-bottom: 1rem;
-}
-
-/* The subscription section */
-.subscribe {
+/* App subscribe section */
+.app__subscribe {
   background-color: #2ab2af;
-  border-radius: 0;
-  flex: 100%;
-  padding: 1.8rem 2.1rem 1.5rem;
+  border-radius: 0 0 0 8px;
+  flex: 50%;
+  padding: 40px;
 }
 
-.subscribe h3 {
-  color: #f9f6f2;
+.app__subscribe-title {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-bottom: 16px;
 }
 
-.subscribe .price {
+.app__subscribe-copy {
+  color: #fff;
+}
+
+.price {
   color: #fff;
   font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
   position: relative;
-  padding-right: 1rem;
-  padding-bottom: 1.1rem;
 }
 
-.subscribe .price span {
-  color: #e1d3c1;
+.sup {
+  color: #90d6d8;
   font-size: 1rem;
+  left: 75px;
   position: absolute;
-  top: .6rem;
-  left: 4rem;
+  top: 12px;
 }
 
-.subscribe form {
-  margin-top: 2.5rem;
+.app__form {
+  margin-top: 30px;
 }
 
-.subscribe button {
+.app__btn {
   background-color: #bfdf32;
   border: none;
   border-radius: 6px;
   box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
   color: #fff;
-  display: ;
   font-size: 1.2rem;
   font-weight: 700;
   padding: .8rem .6rem;
+  transition: transform .3s ease-in-out;
   width: 100%;
 }
 
-.subscribe button:hover {
+.app__btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
-.subscribe button:focus { 
+.app__btn:focus { 
   outline: thin dotted; 
 }
 
-/* The about us section */
-.about {
+/* App about us section */
+.app__about {
   background-color: #4abebd;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  flex: 100%;
-  padding: 1.8rem 2.1rem 1.5rem;
+  border-radius: 0 0 8px 0;
+  flex: 50%;
+  padding: 40px;
 }
 
-.about ul li {
-  color: #f9f6f2;
-  padding: .1rem 0;
+.app__about-title {
+  color: #fff;
+  font-size: 1.2rem;
 }
 
-/* The footer */
-footer {
-  flex-basis: 100%;
+.app__about-list {
+  padding: 20px 0 0;
 }
 
-.attribution { 
-  font-size: .9rem; 
-  padding: 2rem 1rem;
-  text-align: center; 
-}
-
-.attribution a { 
-  color: #3e52a3; 
+.list {
+  color: #fff;
 }
 
 /* Media Queries */
-@media screen and (min-width: 768px) {
-  .subscribe, 
-  .about {
-    flex: 50%;
+@media (max-width: 767px) {
+  .app__main {
+    flex-wrap: wrap;
   }
 
-  .subscribe {
-    border-bottom-left-radius: 5px;
+  .app__subscribe,
+  .app__about {
+    flex: 100%
   }
 
-  .subscribe button {
-    backface-visibility: hidden;
-    transform: perspective(1px);
-    transition: transform .3s ease-in-out;
+  .app__subscribe {
+    border-radius: 0;
   }
 
-  .subscribe button:hover {
-    box-shadow: 0px 0px 150px rgba(0,0,0,0.3);
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-  
-  .about {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 5px;
+  .app__about {
+    border-radius: 0 0 8px 8px;
   }
 }
