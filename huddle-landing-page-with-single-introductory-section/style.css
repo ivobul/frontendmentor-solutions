@@ -87,10 +87,10 @@ body {
 }
 
 .container {
-  min-height: 100vh;
-  padding: 0 3rem;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  padding: 0 2rem;
 }
 
 /* Header */
@@ -133,15 +133,14 @@ header img {
 }
 
 .main form {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-top: 1.8rem;
 }
 
 .main button {
   background-color: #fff;
   border: none;
   border-radius: 50px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   color: #674baf;
   display: block;
   font-size: 1rem;
@@ -155,7 +154,7 @@ header img {
 }
 
 .main button:active {
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   top: 3px;
 }
 
@@ -165,7 +164,7 @@ header img {
 
 /* Social icons section */
 .icons {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -174,8 +173,8 @@ header img {
   width: 100%;
 }
 
-.icons div {
-  padding: 0 .4rem;
+.icons a:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .icons .fa-facebook {
@@ -199,6 +198,12 @@ header img {
   padding: .5rem;
 }
 
+.icons .fa-facebook,
+.icons .fa-instagram,
+.icons .fa-twitter {
+  transition: background-color .3s, color .3s;
+}
+
 .icons .fa-facebook:hover,
 .icons .fa-instagram:hover,
 .icons .fa-twitter:hover {
@@ -220,24 +225,16 @@ header img {
 
 /* Footer */
 footer {
-  padding: 2rem 1rem;
-  width: 100%;
+  padding: 2rem 0 2.2rem;
 }
 
-.attribution { 
-  font-size: .8rem; 
-  text-align: center; 
+@media (min-width: 576px) {
+  .container {
+    padding: 0 4rem;
+  }
 }
 
-.attribution a { 
-  text-decoration: none;
-}
-
-.attribution a:hover {
-  color: #fd889a;
-}
-
-@media screen and (min-width: 768px) {
+@media (min-width: 992px) {
   body {
     background: #674baf url(images/bg-desktop.svg) no-repeat top center;
     background-size: contain;
@@ -253,7 +250,8 @@ footer {
     text-align: unset;
   }
 
-  .main .illustration, .main .intro {
+  .main .illustration, 
+  .main .intro {
     flex: 50%;
   }
 
@@ -272,7 +270,7 @@ footer {
   }
   
   .icons {
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-end;
   } 
 }
