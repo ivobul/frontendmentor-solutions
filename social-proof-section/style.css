@@ -85,15 +85,16 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
-.wrapper {
-  padding: 0 2rem;
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;;
+  min-height: 100vh;
+  padding: 2.5rem 4rem;
 }
 
 .main {
-  margin: 0 auto;
-  max-width: 1170px;
-  padding: 3rem 0;
-  min-height: 100vh;
+  flex-basis: 1240px;
 }
 
 .row {
@@ -229,7 +230,7 @@ body {
   color: #3e52a3; 
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   body {
     background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
   }
@@ -290,5 +291,11 @@ body {
 
   .user-review-box:nth-child(3) {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 2.5rem 1.875rem;
   }
 }
