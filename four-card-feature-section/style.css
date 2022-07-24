@@ -120,6 +120,7 @@ body {
 /* Four card feature section */
 .four-card-body {
   display: flex;
+  flex: 1;
   flex-direction: column;
   max-width: 400px;
   padding: 1rem;
@@ -185,20 +186,8 @@ body {
   display: block;
 }
 
-/* Footer */
-.attribution { 
-  font-size: .8rem; 
-  padding: 2rem 2rem 0.5rem;
-  text-align: center; 
-}
-
-.attribution a { 
-  color: #3E52A3; 
-  text-decoration: none;
-}
-
 /* Media Queries */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   /* Margin bottom utility */
   .intro {
     padding: 3rem;
@@ -224,10 +213,5 @@ body {
 
   .column:nth-child(2) .card:first-child {
     margin-bottom: 0;
-  }
-
-  .attribution { 
-    margin-top: 5rem;
-    padding: .5rem 2rem;
   }
 }
