@@ -80,10 +80,9 @@ a {
 /* Basic rules */
 body {
   background-color: #090B1A;
-  font-size: .9375rem;
 }
 
-.wrap {
+.container {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -102,7 +101,8 @@ body {
   overflow: hidden;
 }
 
-.testimonial, .media {
+.testimonial, 
+.media {
   flex-basis: 500px;
 }
 
@@ -112,7 +112,7 @@ body {
   padding: 50px;
 }
 
-.testimonial h2 {
+.testimonial h1 {
   color: rgb(255, 255, 255);
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
@@ -121,6 +121,7 @@ body {
 .testimonial p {
   color: rgba(255, 255, 255, .75);
   font-family: 'Lexend Deca', sans-serif;
+  font-size: .9375rem;
   margin-top: 30px;
 }
 
@@ -137,7 +138,7 @@ body {
   padding-right: 50px;
 }
 
-.stats h3 {
+.stats h2 {
   color: rgb(255, 255, 255);
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
@@ -153,7 +154,8 @@ body {
 .media {
   background-image: url(images/image-header-desktop.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;;
+  background-size: cover;
+  background-position: center top;
   overflow: hidden;
 }
 
@@ -162,19 +164,6 @@ body {
   height: 100%;
   overflow: hidden;
   z-index: 2;
-}
-
-/* Footer */
-.attribution { 
-  color: #fff;
-  font-size: .8rem; 
-  flex-basis: 100%;
-  padding-top: 20px;
-  text-align: center; 
-}
-
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
 }
 
 @media (max-width: 767px) {
@@ -205,7 +194,6 @@ body {
 
   .media {
     background-image: url(images/image-header-mobile.jpg);
-    background-size: 100% 100%;
     flex-basis: 280px;
     order: 1;
   }
