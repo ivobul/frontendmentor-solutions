@@ -173,16 +173,3 @@ main {
 .stats div:not(:last-child) {
   margin-right: 20px;
 }
-
-footer {
-  flex-basis: 100%;
-  margin-top: 20px;
-}
-
-footer .attribution { 
-  text-align: center; 
-}
-
-footer .attribution a { 
-  color: hsl(228, 45%, 44%);
-}
