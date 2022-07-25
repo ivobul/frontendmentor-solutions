@@ -79,17 +79,17 @@ a {
 
 /* Basic rules */
 body {
-  font-size: .9375rem;
+  background-color: rgb(255, 255, 255);
 }
 
-.wrap {
+.container {
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 50px 25px;
 }
 
 .card {
@@ -101,7 +101,7 @@ body {
   overflow: hidden;
 }
 
-.card h2 {
+.card h1 {
   color: rgb(242, 242, 242);
   font-family: 'Big Shoulders Display', cursive;
   font-size: 1.6rem;
@@ -111,18 +111,20 @@ body {
 
 .card p {
   color: rgba(255, 255, 255, .75);
+  font-size: .9375rem;
   margin-top: 30px;
 }
 
 .card a {
-  display: block;
-  border-radius: 20px;
   background-color: rgb(242, 242, 242);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  display: block;
   margin-top: 60px;
-  text-align: center;
-  padding: 10px;
   max-width: 170px;
-  transition: all .5s linear;
+  padding: 10px;
+  text-align: center;
+  transition: background-color .5s, border .5s, color .5s;
 }
 
 .card a:hover {
@@ -131,7 +133,9 @@ body {
   color: rgb(242, 242, 242);
 }
 
-.suvs, .luxury, .sedans {
+.suvs, 
+.luxury, 
+.sedans {
   padding: 30px;
 }
 
@@ -159,26 +163,9 @@ body {
   color: #00403f;
 }
 
-/* Footer */
-.attribution { 
-  font-size: .8375rem; 
-  text-align: center; 
-  flex-basis: 100%;
-  padding: 10px 10px 0;
-}
-
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
-}
-
 /* Responsive design */
 @media (max-width: 767px) {
-  .wrap {
-    padding: 20px 0;
-  }
-
   .card {
     flex-direction: column;
-    border-radius: 0;
   }
 }
