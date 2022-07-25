@@ -177,7 +177,7 @@ button {
   background-color: #3829E0;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 10px 15px #888888;
+  box-shadow: 0 3px 8px #888888;
   color: #fff;
   cursor: pointer;
   font-weight: bold;
@@ -190,26 +190,16 @@ button:active {
   box-shadow: inset 0px 0px 5px #7280A7;
 }
 
-footer {
-  flex-basis: 100%;
-  margin-top: 30px;
-}
-
-.attribution {
-  text-align: center; 
-}
-
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
-}
-
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   body {
     background-image: url(images/pattern-background-mobile.svg);
   }
 }
 
-@media screen and (max-width: 370px) {
+@media (max-width: 376px) {
+  header {
+    height: 250px;
+  }
   .current-plan {
     flex-flow: column;
   }
