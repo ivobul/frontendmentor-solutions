@@ -124,14 +124,3 @@ body {
   color: hsl(218.8,14.8%,54.9%);
   font-size: 0.9375rem;
 }
-
-.attribution {
-  font-size: .8rem; 
-  flex-basis: 100%;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.attribution__link { 
-  color: hsl(228, 45%, 44%); 
-}
