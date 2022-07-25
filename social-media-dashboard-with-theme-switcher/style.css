@@ -96,7 +96,7 @@ a {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 40px 30px;
+  padding: 50px 30px;
 }
 
 .color-white {
@@ -377,25 +377,7 @@ a {
   height: 32px;
 }
 
-.footer__attribution {
-  font-size: .85rem;; 
-  text-align: center;
-  padding: 40px 10px 0;
-}
-
-.footer__attribution--dark-mode {
-  color: #fff
-}
-
-.footer__attribution--light-mode {
-  color: hsl(230, 17%, 14%)
-}
-
-.footer__link { 
-  color: #5163ac; 
-}
-
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .header__item {
     flex: 100%
   }
@@ -425,9 +407,5 @@ a {
 
   .card:not(:last-child) {
     margin-right: 0;
-  }
-
-  .footer__attribution {
-    padding: 20px 10px 0;
   }
 }
