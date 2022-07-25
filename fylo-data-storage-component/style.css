@@ -90,14 +90,11 @@ body {
 }
 
 .container {
+  align-items: center;;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
-  padding: 30px;
-}
-
-header {
-  height: 130px;
+  padding: 60px 30px;
 }
 
 main {
@@ -165,16 +162,16 @@ main {
 }
 
 .used-space .tooltip::after {
-  border-left: 23px solid transparent;
-  border-right: 23px solid transparent;
-  border-top: 20px solid #fff;
-  bottom: -6px;
+  border-left: 21.9px solid transparent;
+  border-right: 21.9px solid transparent;
+  border-top: 20px solid white;
+  bottom: -10px;
   content: "";
   font-size: 0;
   height: 0;
   line-height: 0;
   position: absolute;
-  right: -12.5px;
+  right: -12px;
   transform: rotate(90deg);
   width: 0;
 }
@@ -228,21 +225,6 @@ main {
   font-weight: bold;
   justify-content: space-between;
   margin-top: 5px;
-}
-
-footer {
-  align-items: flex-end;
-  color: #fff;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  padding: 0 5px;
-  text-align: center;
-}
-
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
 }
 
 @media screen and (max-width: 767px) {
