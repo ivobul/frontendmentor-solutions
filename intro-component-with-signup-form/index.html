@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <div class="container">
+      <main class="page-main">
+        <div class="page-main__section intro">
+          <h1 class="intro__title">Learn to code by watching others</h1>
+          <p class="intro__copy">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div><!-- Intro section -->
+        <div class="page-main__section signup">
+          <h2 class="signup__title"><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
+          <form action="/" method="post" class="signup__form form">
+            <div class="form__row">
+              <input type="text" name="first-name" id="first-name" class="form__inp" placeholder="First Name" size="1">
+              <label class="sr-only" for="first-name">First Name</label>
+            </div><!-- Form row -->
+            <div class="form__row">
+              <input type="text" name="last-name" id="last-name" class="form__inp" placeholder="Last Name" size="1">
+              <label class="sr-only" for="last-name">Last Name</label>
+            </div><!-- Form row -->
+            <div class="form__row">
+              <input type="email" name="email" id="email" class="form__inp" placeholder="Email Address" size="1">
+              <label class="sr-only" for="email">Email Address</label>
+            </div><!-- Form row -->
+            <div class="form__row">
+              <input type="password" name="password" id="password" class="form__inp" placeholder="Password" size="1">
+              <label class="sr-only" for="password">Password</label>
+            </div><!-- Form row -->
+            <div class="form__row">
+              <button type="submit" class="form__btn">Claim your free trial</button>
+              <p class="small-text">By clicking the button, you are agreeing to our <a href="" class="small-text-link">Terms and Services</a></p>
+            </div><!-- Form row -->
+          </form><!-- Form -->
+        </div><!-- Signup section -->
+      </main><!-- Page main -->
+    </div><!-- Container -->
+
+    <!-- JustValidate - Modern form validation library -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

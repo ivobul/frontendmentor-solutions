@@ -1,0 +1,264 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 60px;
+}
+
+/* Page main */
+.page-main {
+  display: flex;
+  flex-basis: 1080px;
+  flex-direction: row;
+}
+
+.page-main__section {
+  flex: 50%;
+}
+
+/* Intro section */
+.intro {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.intro__title {
+  font-size: 2.7rem;
+}
+
+.intro__copy {
+  margin-top: 20px;
+}
+
+/* Signup section */
+.signup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.signup__title {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 6px;
+  box-shadow: 0px 15px 10px -3px #c65b5b;
+  color: #fff;
+  flex: 100%;
+  font-weight: 400;
+  margin-top: 50px;
+  padding: 16px 28px;
+  text-align: center;
+}
+
+.signup__form {
+  flex: 100%;
+  margin-top: 25px;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 15px 10px -3px #c65b5b;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+}
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+  position: relative;
+}
+
+.form__row:not(:last-child) {
+  margin-bottom: 20px
+}
+
+.form__inp,
+.form__btn {
+  border-radius: 6px;
+  flex: 100%;
+  padding: 14px 20px;
+}
+
+.form__inp {
+  border: 1px solid #c7c4db;
+}
+
+.form__inp::placeholder {
+  font-weight: 500;
+}
+
+.form__btn {
+  background-color: hsl(154, 59%, 51%);
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+
+.form__btn:hover {
+  background-color: #87e0ba;
+}
+
+.small-text {
+  color: #9491a8;
+  font-size: .875rem;
+  flex: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.small-text-link {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+/* hides an element to all devices except screen readers */
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+/* JustValidate invalid errors */
+.just-validate-error-field {
+  background-image: url(images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  border: none;
+  color: hsl(0, 100%, 74%);
+  outline: 2px solid #ff4747;
+}
+
+.just-validate-error-label {
+  font-style: italic;
+  text-align: right;
+  flex: 100%;
+  color: hsl(0, 100%, 74%) !important;
+  margin-top: 10px;
+  font-size: .875rem;
+}
+
+@media (max-width: 991px) {
+  .page-main {
+    flex-wrap: wrap;
+  }
+  
+  .page-main__section {
+    flex: 100%;
+  }
+
+  .intro {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .signup__btn {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
