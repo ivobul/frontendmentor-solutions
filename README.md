@@ -6,7 +6,7 @@
 - [Four Card Feature Section](https://ivobul.github.io/frontendmentor-solutions/four-card-feature-section/)
 - [Fylo Data Storage Component](https://ivobul.github.io/frontendmentor-solutions/fylo-data-storage-component/)
 - [Huddle Landing Page with Single Introductory Section](https://ivobul.github.io/frontendmentor-solutions/huddle-landing-page-with-single-introductory-section/)
-- [Interactive Rating Component](https://sparkly-salamander-3436c9.netlify.app/)
+- [Interactive Rating Component](https://ivobul.github.io/frontendmentor-solutions/interactive-rating-component/)
 - [Intro Component with Signup Form](https://ivobul.github.io/frontendmentor-solutions/intro-component-with-signup-form/)
 - [Loopstudios Landing Page](https://ivobul.github.io/frontendmentor-solutions/loopstudios-landing-page/)
 - [NFT Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/nft-preview-card-component/)
