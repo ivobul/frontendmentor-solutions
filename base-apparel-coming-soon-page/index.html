@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="page-header item-a">
+        <a href="" class="page-header__logo">
+          <img src="images/logo.svg" alt="Site logo">
+        </a>
+      </header><!-- Page header -->
+      <div class="page-left item-b">
+        <main class="page-main">
+          <h1 class="page-main__title">We're <span class="color-black bold">coming</span> <span class="color-black bold">soon</span></h1>
+           <p class="page-main__copy">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <form action="/" method="get" class="page-main__form form">
+            <label for="email" class="sr-only">Search</label>
+            <input type="email" id="email" class="form__email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="0">
+            <button type="submit" class="form__button"><img src="images/icon-arrow.svg" alt="Search"></button>
+          </form><!-- Page main form -->
+          <span class="error" aria-live="polite"></span>
+        </main><!-- Page main -->
+      </div><!-- Page left section -->
+      <div class="page-right item-c"></div><!-- Page right section -->
+    </div><!-- Container -->
+    
+    <script src="script.js"></script>
+  </body>
+</html>

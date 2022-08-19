@@ -1,0 +1,300 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  background-image: url(images/bg-pattern-desktop.svg),
+    linear-gradient(135deg,  hsl(0, 0%, 100%),  hsl(0, 100%, 98%));
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "header header sidebar"
+    "main main sidebar"
+    "main main sidebar";
+  min-height: 100vh;
+}
+
+.item-a {
+  grid-area: header;
+}
+
+.item-b {
+  grid-area: main;
+}
+
+.item-c {
+  grid-area: sidebar;
+}
+
+/*  visible only to screen readers */
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  position: absolute;
+  overflow: hidden;
+  top: auto;
+  width: 1px;
+}
+
+.color-black {
+  color: #000;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Page header */
+.page-header {
+  padding: 40px;
+}
+
+.page-header__logo {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+/* Page left */
+.page-left {
+  padding: 40px;
+}
+
+/* Page left - page main */
+.page-main {
+  margin-left: 80px;
+  max-width: 480px;
+}
+
+.page-main__title {
+  color: #CE9797;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.page-main__copy {
+  color: #CE9797;
+  margin-top: 20px;
+}
+
+/* Page main form */
+.page-main__form {
+  margin-top: 30px;
+  position: relative;
+}
+
+.form {
+  display: flex;
+}
+
+.form__email {
+  border-radius: 30px;
+  border: 1px solid hsl(0, 36%, 70%);
+  flex: 80%;
+  height: 55px;
+  padding: 12px;
+}
+
+.form__email:focus {
+  outline: none;
+}
+
+.form__email:invalid {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
+.icon-error {
+  background-image: url(images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 110px center;
+}
+
+.form__button {
+  align-items: center;
+  background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 10px 15px -3px #ccc4c4;
+  cursor: pointer;
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  margin-left: -30px;
+  padding: 12px;
+  position: absolute;
+  right: 0;
+  width: 100px;
+}
+
+.error {
+  color: hsl(0, 36%, 70%);
+  display: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: .875rem;
+  width: 100%;
+}
+
+.active {
+  display: block;
+}
+
+/* Page right */
+.page-right {
+  background-image: url(images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  .container {
+    background-image: linear-gradient(135deg,  hsl(0, 0%, 100%),  hsl(0, 100%, 98%));
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+      "header header header"
+      "sidebar sidebar sidebar"
+      "main main main";
+  }
+
+  .item-c {
+    height: 100vh;
+  }
+
+   .page-header {
+    padding: 40px 30px;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
+  }
+
+  .page-left {
+    padding: 40px 30px;
+  }
+
+  .page-main {
+    margin: 0 auto;
+  }
+  
+  .page-main__title,
+  .page-main__copy {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-main__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .page-header,
+  .page-left {
+    padding: 40px 20px;
+  }
+  
+  .page-main__title {
+    font-size: 2rem;
+  }
+
+  .form__button {
+    width: 80px;
+  }
+
+  .icon-error {
+    background-position: right 90px center;
+  }
+  
+  .error {
+    margin-left: 10px;
+  }
+}
