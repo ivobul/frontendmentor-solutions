@@ -272,6 +272,10 @@ body {
   .page-main__copy {
     text-align: center;
   }
+  
+  .page-right {
+    background-image: url(images/hero-mobile.jpg);
+  }
 }
 
 @media (max-width: 575px) {
