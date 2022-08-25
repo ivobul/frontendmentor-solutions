@@ -102,7 +102,7 @@ a {
   display: flex;
   font-weight: 600;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 16px 32px;
 }
 
 .logo {
@@ -115,7 +115,6 @@ a {
   background-image: url(images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   padding: 60px 80px;
 }
 
