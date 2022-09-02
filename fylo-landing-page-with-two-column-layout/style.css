@@ -1,0 +1,675 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.btn {
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(0,0%,100%);
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color .3s;
+}
+
+.btn:hover {
+  background-color: hsl(224.3,93%,66.3%);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*  visible only to screen readers */
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  position: absolute;
+  overflow: hidden;
+  top: auto;
+  width: 1px;
+}
+
+.error {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Page header */
+.page-header {
+  background-color: hsl(0,0%,100%);
+  padding: 40px 60px;
+}
+
+/* Page header top */
+.page-header__top {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  flex-basis: 126px;
+}
+
+.page-header__nav {
+  align-items: center;
+  display: flex;
+}
+
+.page-header__nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-header__nav-link {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Page header main */
+.page-header__main {
+  display: flex;
+  padding-top: 100px;
+}
+
+.page-header__section {
+  flex: 50%;
+}
+
+.page-header__section:last-child {
+  padding-left: 40px;
+}
+
+.page-header__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.4;
+  margin-top: 50px;
+}
+
+.page-header__copy {
+  margin-top: 20px;
+}
+
+/* Page header form */
+.page-header__form {
+  display: flex;
+  margin-top: 25px;
+  position: relative;
+}
+
+.page-header__email {
+  border: 1px solid hsl(0,0%,0%);
+  border-radius: 3px;
+  flex-basis: 330px;
+  outline: none;
+  padding: 14px 18px;
+}
+
+.page-header__email:focus {
+  outline: none;
+}
+
+.page-header__submit {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: 5px 5px 12px -5px hsl(0,0%,67.1%);
+  flex-basis: 200px;
+  margin-left: 20px;
+  padding: 14px 32px;
+}
+
+#error1 {
+  color: hsl(0,100%,61.6%);
+  font-size: .875rem;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 54px;
+  width: 100%;
+}
+
+/* Page main */
+.page-main {
+  flex: 1;
+}
+
+.page-main__article {
+  display: flex;
+}
+
+.page-main__section {
+  flex: 50%;
+}
+
+.page-main__section:last-child {
+  padding-left: 70px;
+}
+
+.page-main__title {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px;
+}
+
+.page-main__copy {
+  max-width: 515px;
+}
+
+.page-main__copy--margin-bottom {
+  margin-bottom: 15px;
+}
+
+/* Page main article bg-image */
+/* Many thanks to: https://github.com/edavid78/Fylo-landing-page-with-two-column-layout
+*/
+.bg-image {
+  background-color: hsl(240,75%,98.4%);
+  margin-top: 200px;
+  padding: 30px 60px 80px;
+  position: relative;
+}
+
+.bg-image::before {
+  background-image: url(images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
+  height: 121px;
+  left: 0;
+  position: absolute;
+  top: -121px;
+  width: 100%;
+}
+
+.page-main__link {
+  align-items: center;
+  color: hsl(170, 45%, 43%);
+  display: flex;
+  margin-top: 15px; 
+  position: relative;
+  width: max-content;
+}
+
+.page-main__link:hover {
+  color: hsl(169.8,33.7%,65.7%);
+}
+
+.page-main__link::after {
+  background-color: hsl(170, 45%, 43%);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.icon-arrow {
+  margin-left: 5px;
+}
+
+.page-main__quote {
+  background-color: hsl(0,0%,100%);
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px -5px hsl(0,0%,67.1%);
+  font-size: .875rem;
+  max-width: 370px;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.icon-quotes {
+  margin-bottom: 10px;
+}
+
+.page-main__user {
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 44px;
+}
+
+/* Page main article signup */
+.signup {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(0,0%,100%);
+  padding: 80px 60px;
+}
+
+.page-main__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.page-main__email {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  box-shadow: 5px 5px 12px -5px hsl(238.1,21.6%,29%);
+  flex-basis: 530px;
+  padding: 14px 18px;
+}
+
+.page-main__email:focus {
+  outline: none;
+}
+
+.page-main__submit {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: 5px 5px 12px -5px hsl(238.1,21.6%,29%);
+  flex-basis: 250px;
+  margin-top: 20px;
+  padding: 14px 32px;
+}
+
+#error2 {
+  color: #fff;
+  flex-basis: 100%;
+  font-size: .875rem;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* Page footer */
+.page-footer {
+  background-color: hsl(243, 87%, 12%);
+  padding: 80px 60px;
+}
+
+/* Page footer top */
+.page-footer__top {
+  display: flex;
+}
+
+.page-footer__logo {
+  flex-basis: 126px;
+  filter:  brightness(0) invert(1);
+}
+
+/* Page footer main */
+.page-footer__main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.page-footer__contact-item,
+.page-footer__nav-item,
+.page-footer__social-item{
+  color: hsl(0,0%,100%);
+}
+
+.page-footer__contact-item:not(:last-child),
+.page-footer__nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.page-footer__contact-icon {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.page-footer__nav-item {
+  transition: color .3s;
+}
+
+.page-footer__nav-item:hover {
+  color: hsl(238.9,52.2%,59%);
+}
+
+.page-footer__social {
+  margin-right: 80px;
+}
+
+.page-footer__social-item {
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid hsl(0,0%,100%);
+  display: inline-flex;
+  height: 36px;
+  justify-content: center;
+  transition: border, color .2s;
+  width: 36px;
+}
+
+.page-footer__social-item:not(:last-child)  {
+  margin-right: 15px
+}
+
+.facebook:hover {
+  border: 1px solid hsl(220.2,45.9%,47.8%);
+  color: hsl(220.2,45.9%,47.8%);
+}
+
+.twitter:hover {
+  border: 1px solid hsl(202.8,89.1%,53.1%);
+  color: hsl(202.8,89.1%,53.1%);
+}
+
+.instagram:hover {
+  border: 1px solid hsl(326.1,56.9%,48.2%);
+  color: hsl(326.1,56.9%,48.2%);
+}
+
+@media (max-width: 991px) {
+  .page-header__copy {
+    margin-top: 40px;
+  }
+
+  .page-header__form {
+    margin-top: 50px;
+  }
+  
+  .page-header__main {
+    flex-wrap: wrap;
+  }
+
+  .page-header__section {
+    flex: 100%;
+    text-align: center;
+  }
+
+  .page-header__section:first-child {
+    margin-top: 50px;
+    order: 2;
+  }
+
+  .page-header__section:last-child {
+    order: 1;
+    padding-left: 0;
+  }
+
+  .page-header__email {
+    flex: 2;
+  }
+  
+  .page-header__submit {
+    flex: 1;
+  }
+  
+  #error1 {
+    text-align: left;
+  }
+
+  .page-main__article {
+    flex-wrap: wrap;
+  }
+
+  .page-main__section {
+    flex: 100%;
+  }
+
+  .page-main__section:last-child {
+    padding-left: 0;
+  }
+
+  .page-main__section--alternate:first-child {
+    margin-top: 100px;
+    order: 2;
+  }
+  
+  .page-main__section--alternate:last-child {
+    order: 1;
+  }
+
+  .page-main__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .page-main__copy {
+    max-width: 100%;
+  }
+
+  .page-main__copy--text-center {
+    text-align: center;
+  }
+  
+  .page-main__copy--margin-bottom {
+    margin-bottom: 20px;
+  }
+
+  .bg-image::before {
+    background-image: url(images/bg-curve-mobile.svg);
+  }
+  
+  .page-main__link,
+  .page-main__quote {
+    margin: 50px auto 0; 
+  }
+  
+  .page-main__form {
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .page-main__email,
+  .page-main__submit,
+  #error2 {
+    flex-basis: 60%;
+  }
+
+  .page-footer__main {
+    flex-wrap: wrap;
+  }
+  
+  .page-footer__contact,
+  .page-footer__nav,
+  .page-footer__social {
+    flex: 100%
+  }
+
+  .page-footer__nav {
+    margin-top: 40px;
+  }
+
+  .page-footer__social {
+    margin-right: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    padding: 40px 30px;
+  }
+  
+  .page-header__form {
+    flex-wrap: wrap;
+  }
+
+  .page-header__email {
+    flex-basis: 100%;
+    order: 1;
+  }
+
+  .page-header__submit {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    order: 3;
+  }
+  
+  #error1 {
+    flex-basis: 100%;
+    left: 0;
+    order: 2;
+    position: static;
+    top: 0;
+  }
+
+  .bg-image {
+    padding: 30px 30px 80px;
+  }
+
+  .page-main__quote {
+    max-width: 100%;
+  }
+
+  .signup {
+    padding: 80px 30px;
+  }
+  
+  .page-main__email,
+  .page-main__submit,
+   #error2 {
+    flex-basis: 100%;
+  }
+
+  .page-footer {
+    padding: 80px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-header {
+    padding: 40px 20px;
+  }
+  
+  .page-header__logo {
+    flex-basis: 106px;
+  }
+  
+  .page-header__nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .page-header__title {
+    font-size: 2.2rem;
+  }
+
+  .page-main__title {
+    font-size: 1.6rem;
+  }
+  
+  .bg-image {
+    padding: 30px 20px 80px; 
+  }
+  
+  .page-main__quote {
+    padding: 30px;
+  }
+  
+  .signup {
+    padding: 80px 20px;
+  }
+
+  .page-footer {
+    padding: 80px 20px;
+  }
+  
+  .page-footer__logo {
+    flex-basis: 106px;
+  }
+}
+
+@media (max-width: 376px) {
+  .page-header__nav {
+    flex: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .page-main__email {
+    flex-basis: 580px;
+  }
+}

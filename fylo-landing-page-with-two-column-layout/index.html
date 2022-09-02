@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <div class="container">
+      <header class="page-header">
+        <div class="page-header__top">
+          <a href="" class="page-header__logo">
+            <img src="images/logo.svg" alt="Site logo">
+          </a><!-- Page header logo -->
+          <nav class="page-header__nav">
+            <div class="page-header__nav-item">
+              <a href="" class="page-header__nav-link">Features</a>
+            </div>
+            <div class="page-header__nav-item">
+              <a href="" class="page-header__nav-link">Team</a>
+            </div>
+            <div class="page-header__nav-item">
+              <a href="" class="page-header__nav-link">Sign In</a>
+            </div>
+          </nav><!-- Page header nav -->
+        </div><!-- Page header top -->
+        <div class="page-header__main">
+          <div class="page-header__section">
+            <h1 class="page-header__title">All your files in one secure location, accessible anywhere.</h1>
+            <p class="page-header__copy">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+            <form action="/" class="page-header__form">
+              <label for="email1" class="sr-only">Email Address</label>
+              <input type="email" id="email1" name="email" class="page-header__email" placeholder="Enter your email..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="1">
+              <button type="submit" class="page-header__submit btn">Get Started</button>
+              <span id="error1" class="error" aria-live="polite"></span>
+            </form><!-- Page header form -->
+          </div><!-- Page header section -->
+          <div class="page-header__section">
+            <img src="images/illustration-1.svg" alt="">
+          </div><!-- Page header section -->
+        </div><!-- Page header main -->
+      </header><!-- Page header -->
+      <main class="page-main">
+        <article class="page-main__article bg-image">
+          <div class="page-main__section page-main__section--alternate">
+            <h2 class="page-main__title">Stay productive, wherever you are</h2>
+            <p class="page-main__copy page-main__copy--margin-bottom">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+            <p class="page-main__copy">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+            <a href="" class="page-main__link">See how Fylo works 
+              <img src="images/icon-arrow.svg" alt="" class="icon-arrow">
+            </a>
+            <div class="page-main__quote">
+              <img src="images/icon-quotes.svg" alt="" class="icon-quotes">
+              <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+              <div class="page-main__user">
+                <img src="images/avatar-testimonial.jpg" alt="" class="user-avatar">
+                <div>
+                  <p class="bold">Kyle Burton</p>
+                  <p>Founder & CEO, Huddle</p>
+                </div>
+              </div><!-- Page main user section -->
+            </div><!-- Page main quote section -->
+          </div><!-- Page main section -->
+          <div class="page-main__section page-main__section--alternate">
+            <img src="images/illustration-2.svg" alt="">
+          </div><!-- Page main section -->
+        </article><!-- Page main article -->
+        <article class="page-main__article signup">
+          <div class="page-main__section">
+            <h2 class="page-main__title">Get early access today</h2>
+            <p class="page-main__copy page-main__copy--text-center">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+          </div><!-- Page main section -->
+          <div class="page-main__section">
+            <form action="/" class="page-main__form">
+              <label for="email2" class="sr-only">Email Address</label>
+              <input type="email" id="email2" name="email" class="page-main__email" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="1">
+              <span id="error2" class="error" aria-live="polite"></span>
+              <button type="submit" class="page-main__submit btn">Get Started For Free</button>
+            </form><!-- Page main form -->
+          </div><!-- Page main section -->
+        </article><!-- Page main article -->
+      </main><!-- Page main -->
+      <footer class="page-footer">
+        <div class="page-footer__top">
+          <a href="" class="page-footer__logo">
+            <img src="images/logo.svg" alt="Site logo">
+          </a>
+        </div><!-- Page footer top -->
+        <div class="page-footer__main">
+          <div class="page-footer__contact">
+            <div class="page-footer__contact-item">
+              <img src="images/icon-phone.svg" alt="" class="page-footer__contact-icon">
+              <span>Phone: +1-543-123-4567</span>
+            </div><!-- Page footer item -->
+            <div class="page-footer__contact-item">
+              <img src="images/icon-email.svg" alt="" class="page-footer__contact-icon">
+              <span>example@fylo.com</span>
+            </div><!-- Page footer item -->
+          </div><!-- Page footer contact -->
+          <nav class="page-footer__nav">
+            <div class="page-footer__nav-item">
+              <a href="">About Us</a>
+            </div><!-- Page footer item -->
+            <div class="page-footer__nav-item">
+              <a href="">Jobs</a>
+            </div><!-- Page footer item -->
+            <div class="page-footer__nav-item">
+              <a href="">Press</a>
+            </div><!-- Page footer item -->
+            <div class="page-footer__nav-item">
+              <a href="">Blog</a>
+            </div><!-- Page footer item -->
+          </nav><!-- Page footer nav -->
+          <nav class="page-footer__nav">
+            <div class="page-footer__nav-item">
+              <a href="">Contact Us</a>
+            </div><!-- Page footer item -->
+            <div class="page-footer__nav-item">
+              <a href="">Terms</a>
+            </div><!-- Page footer item -->
+            <div class="page-footer__nav-item">
+              <a href="">Privacy</a>
+            </div><!-- Page footer item -->
+          </nav><!-- Page footer nav -->
+          <div class="page-footer__social">
+            <a href="" class="page-footer__social-item facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span>
+            </a><!-- Page footer item -->
+            <a href="" class="page-footer__social-item twitter">
+              <i class="fa-brands fa-twitter"></i>
+              <span class="sr-only">Twitter</span>
+            </a><!-- Page footer item -->
+            <a href="" class="page-footer__social-item instagram">
+              <i class="fa-brands fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a><!-- Page footer item -->
+          </div><!-- Page footer social -->
+        </div><!-- Page footer main -->
+      </footer><!-- Page footer -->
+    </div><!-- Container -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
