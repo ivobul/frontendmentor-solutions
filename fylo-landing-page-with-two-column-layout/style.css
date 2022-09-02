@@ -282,6 +282,10 @@ a {
   width: max-content;
 }
 
+.page-main__link:visited {
+  color: hsl(170, 45%, 43%);
+}
+
 .page-main__link:hover {
   color: hsl(169.8,33.7%,65.7%);
 }
@@ -433,14 +437,26 @@ a {
   margin-right: 15px
 }
 
+.facebook:visited {
+  color: hsl(0,0%,100%);
+}
+
 .facebook:hover {
   border: 1px solid hsl(220.2,45.9%,47.8%);
   color: hsl(220.2,45.9%,47.8%);
 }
 
+.twitter:visited {
+  color: hsl(0,0%,100%);
+}
+
 .twitter:hover {
   border: 1px solid hsl(202.8,89.1%,53.1%);
   color: hsl(202.8,89.1%,53.1%);
+}
+
+.instagram:visited {
+  color: hsl(0,0%,100%);
 }
 
 .instagram:hover {
