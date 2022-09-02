@@ -6,6 +6,7 @@
 - [FAQ Accordion Card](https://ivobul.github.io/frontendmentor-solutions/faq-accordion-card/)
 - [Four Card Feature Section](https://ivobul.github.io/frontendmentor-solutions/four-card-feature-section/)
 - [Fylo Data Storage Component](https://ivobul.github.io/frontendmentor-solutions/fylo-data-storage-component/)
+- [Fylo Landing Page with Two Column Layout](https://ivobul.github.io/frontendmentor-solutions/fylo-landing-page-with-two-column-layout/)
 - [Huddle Landing Page with Alternating Feature Block](https://ivobul.github.io/frontendmentor-solutions/huddle-landing-page-with-alternating-feature-block)
 - [Huddle Landing Page with Single Introductory Section](https://ivobul.github.io/frontendmentor-solutions/huddle-landing-page-with-single-introductory-section/)
 - [Interactive Rating Component](https://ivobul.github.io/frontendmentor-solutions/interactive-rating-component/)
