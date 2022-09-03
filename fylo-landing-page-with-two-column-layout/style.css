@@ -686,6 +686,6 @@ a {
 
 @media (min-width: 1441px) {
   .page-main__email {
-    flex-basis: 580px;
+    flex-basis: 600px;
   }
 }
