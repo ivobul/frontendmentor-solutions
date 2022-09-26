@@ -173,7 +173,7 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size: 2.6rem;
   line-height: 1.4;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .page-header__copy {
@@ -263,13 +263,13 @@ a {
 .bg-image::before {
   background-image: url(images/bg-curve-desktop.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 100%;
   content: "";
-  height: 121px;
+  height: 114px;
   left: 0;
   position: absolute;
-  top: -121px;
+  top: -114px;
+  transform: translateY(1px);
   width: 100%;
 }
 
@@ -541,10 +541,6 @@ a {
   .page-main__copy--margin-bottom {
     margin-bottom: 20px;
   }
-
-  .bg-image::before {
-    background-image: url(images/bg-curve-mobile.svg);
-  }
   
   .page-main__link,
   .page-main__quote {
@@ -677,15 +673,21 @@ a {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .page-header__nav {
     flex: 100%;
     margin-top: 30px;
+  }
+
+  .bg-image::before {
+    background-image: url(images/bg-curve-mobile.svg);
+    height: 53px;
+    top: -53px;
   }
 }
 
 @media (min-width: 1441px) {
   .page-main__email {
-    flex-basis: 600px;
+    flex-basis: 580px;
   }
 }
