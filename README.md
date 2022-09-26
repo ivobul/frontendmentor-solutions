@@ -9,6 +9,7 @@
 - [Fylo Data Storage Component](https://ivobul.github.io/frontendmentor-solutions/fylo-data-storage-component/)
 - [Fylo Landing Page with Two Column Layout](https://ivobul.github.io/frontendmentor-solutions/fylo-landing-page-with-two-column-layout/)
 - [Huddle Landing Page with Alternating Feature Block](https://ivobul.github.io/frontendmentor-solutions/huddle-landing-page-with-alternating-feature-block)
+- [Huddle Landing Page with Curved Sections](https://ivobul.github.io/frontendmentor-solutions/huddle-landing-page-with-curved-sections/)
 - [Huddle Landing Page with Single Introductory Section](https://ivobul.github.io/frontendmentor-solutions/huddle-landing-page-with-single-introductory-section/)
 - [Interactive Rating Component](https://ivobul.github.io/frontendmentor-solutions/interactive-rating-component/)
 - [Intro Component with Signup Form](https://ivobul.github.io/frontendmentor-solutions/intro-component-with-signup-form/)
