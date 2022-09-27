@@ -658,6 +658,8 @@ a {
 
   .page-header__top-link { 
     margin-top: 30px;
+    text-align: center;
+    width: 100%;
   }
 }
 
