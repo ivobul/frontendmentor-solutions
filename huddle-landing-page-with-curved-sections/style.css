@@ -167,7 +167,7 @@ a {
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 30px;
   color: hsl(322, 100%, 66%);  
-  padding: 12px 28px;
+  padding: 10px 24px;
   text-transform: capitalize;
   transition: color .2s;
 }
@@ -572,10 +572,6 @@ a {
   .page-header__top-logo,
   .header-site-logo {
     height: 28px; 
-  }
-
-  .page-header__top-link { 
-    padding: 10px 24px;
   }
 
   .page-header__main-title {
