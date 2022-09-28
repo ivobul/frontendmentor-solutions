@@ -573,6 +573,10 @@ a {
   .header-site-logo {
     height: 28px; 
   }
+  
+  .page-header__top-link {
+    padding: 8px 20px;
+  }
 
   .page-header__main-title {
     font-size: 2.2rem;
