@@ -130,6 +130,7 @@ a {
   box-shadow: 0px 0px 15px 0px hsl(197, 72%, 82%);
   flex-basis: 200px;
   color: hsl(192, 100%, 9%);
+  transition: color .3s;
 }
 
 .page-header__top-link:hover {
@@ -170,6 +171,7 @@ a {
   box-shadow: 0px 0px 15px 3px hsl(197, 72%, 82%);
   color: hsl(0, 0%, 100%);
   margin-top: 30px;
+  transition: background-color .3s;
   width: 250px;
 }
 
@@ -222,7 +224,7 @@ a {
 }
 
 .article__copy {
-  color: hsl(208, 11%, 55%);
+  color: hsl(210,8.9%,43.9%);
   font-size: 1.125rem;
   margin-top: 20px;
 }
@@ -251,6 +253,7 @@ a {
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
   color: hsl(0, 0%, 100%);
   margin-top: 30px;
+  transition: background-color .3s;
   width: 350px;
 }
 
@@ -307,6 +310,10 @@ a {
   margin-bottom: 20px;
 }
 
+.page-footer__nav-link:hover {
+  text-decoration: underline;
+}
+
 /* Page footer social section */
 .page-footer__social {
   padding-top: 75px;
@@ -319,11 +326,17 @@ a {
   display: inline-flex;
   height: 36px;
   justify-content: center;
+  transition: border .3s, color .3s;
   width: 36px;
 }
 
+.page-footer__social-icons:hover {
+  border: 1px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+}
+
 .page-footer__social-icons:not(:last-child)  {
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 /* Page footer copyright section */
