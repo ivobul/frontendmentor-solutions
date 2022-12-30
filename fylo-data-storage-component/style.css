@@ -162,18 +162,16 @@ main {
 }
 
 .used-space .tooltip::after {
-  border-left: 21.9px solid transparent;
-  border-right: 21.9px solid transparent;
-  border-top: 20px solid white;
-  bottom: -10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+  bottom: 0;
+  margin-bottom: -10px;
   content: "";
-  font-size: 0;
-  height: 0;
-  line-height: 0;
   position: absolute;
-  right: -12px;
+  right: 0;
+  margin-right: -10px;
   transform: rotate(90deg);
-  width: 0;
 }
 
 .used-space .tooltip .large-bold {
