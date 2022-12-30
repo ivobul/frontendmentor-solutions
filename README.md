@@ -1,4 +1,4 @@
-# Frontend Mentor | Solutions
+# Frontend Mentor Solutions
 
 - [3-Column Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/3-column-preview-card-component/)
 - [Advice Generator App](https://ivobul.github.io/frontendmentor-solutions/advice-generator-app/)
