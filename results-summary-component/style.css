@@ -1,0 +1,272 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+
+.color-gray {
+  color: gray;
+}
+
+/* Page main */
+.page-main {
+  display: flex;
+  justify-content: center;
+}
+
+/* Component */
+.component {
+  border-radius: 30px;
+  box-shadow: 10px 10px 30px 0px #d3d8e5;
+  display: flex;
+  flex-basis: 750px;
+}
+  
+.component__result,
+.component__summary {
+  flex: 50%;
+}
+
+/* Component result */
+.component__result {
+  align-items: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.component__result-title {
+  font-size: 1.5rem;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 30px;
+}
+
+.component__result-stack {
+  align-items: center;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  color: hsl(241, 100%, 79%);
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  line-height: 1.2;
+  width: 200px;
+}
+
+.component__result-stack-title {
+  color: hsl(221, 100%, 96%);
+  font-size: 4rem;
+}
+
+.component__result-subtitle {
+  color: hsl(221, 100%, 96%);
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+.component__result-copy {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.125rem;
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+/* Component summary */
+.component__summary {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+}
+
+.component__summary-title {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.component__summary-subtitle {
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+
+.component__summary-stack {
+  align-items: center;
+  border-radius: 6px;
+  display: flex;
+  padding: 15px;
+}
+
+.component__summary-stack:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.reaction-bgcolor {
+  background-color: hsla(0, 100%, 67%, .1);
+}
+
+.reaction-color {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory-bgcolor {
+  background-color: hsl(39, 100%, 56%, .1);
+}
+
+.memory-color {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal-bgcolor {
+  background-color: hsl(166, 100%, 37%, .1);
+}
+
+.verbal-color {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual-bgcolor {
+  background-color: hsl(234, 85%, 45%, .1);
+}
+
+.visual-color {
+  color: hsl(234, 85%, 45%)
+}
+
+.component__summary-scores {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.component__summary-btn {
+  background-color: hsl(224, 30%, 27%);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  outline: none;
+  padding: 16px 30px;
+  transition: background-color .3s;
+}
+
+.component__summary-btn:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+  
+  .component {
+    border-radius: 0;
+    flex-direction: column;
+  }
+
+  .component__result {
+    border-radius: 0 0 30px 30px;
+  }
+
+  .component__result-copy {
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .component__result,
+  .component__summary {
+    padding: 50px 20px;
+  }
+}
