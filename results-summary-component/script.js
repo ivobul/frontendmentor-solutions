@@ -29,8 +29,8 @@ scores.forEach((item, index) => {
 fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
-    data.forEach((elem, index, arr) => {
-      total += arr[index].score;
+    data.forEach((elem) => {
+      total += elem.score;
       len++;
     });
     
