@@ -1,0 +1,299 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-color: hsl(27, 66%, 92%);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+
+/* Page main */
+.page-main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* Component */
+.component {
+  flex-basis: 500px;
+}
+
+/* Component header */
+.component__header {
+  align-items: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 14px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.component__header-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.component__header-subtitle {
+  font-size: 2rem;
+}
+
+/* Component main */
+.component__main {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 14px;
+  padding: 30px 40px;
+}
+
+.component__main-title {
+  color: hsl(25, 47%, 15%);
+  font-size: 2rem;
+}
+
+/* Component main bars */
+.component__main-bars {
+  align-items: flex-end;
+  border-bottom: 2px solid hsl(27, 66%, 87%);
+  display: flex;
+  gap: 20px;
+  min-height: 300px;
+  padding-bottom: 20px;
+}
+
+.component__main-col {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.component__main-bar {
+  border-radius: 5px;
+  cursor: pointer;
+  height: 0px;
+}
+
+.mon,
+.tue,
+.thu,
+.fri,
+.sat,
+.sun {
+  background-color: hsl(10, 79%, 65%);
+  transition: background-color .3s;
+}
+
+.mon:hover,
+.tue:hover,
+.thu:hover,
+.fri:hover,
+.sat:hover,
+.sun:hover {
+  background-color: hsl(10, 79%, 75%);
+}
+
+.wed {
+  background-color: hsl(186, 34%, 60%);
+  transition: background-color .3s;
+}
+
+.wed:hover {
+  background-color: hsl(186, 34%, 70%);
+}
+
+.tooltip {
+  align-items: center;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+  display: none;
+  font-size: .875rem;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: -40px;
+  padding: 5px 8px;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.component__main-bar:hover + .tooltip {
+  display: flex;
+}
+
+.component__main-bar-label {
+  color: hsl(28, 10%, 43%);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Component main bottom section */
+.component__main-bottom {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.component__main-bottom-title {
+  color: hsl(28, 10%, 43%);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.component__main-bottom-subtitle {
+  font-size: 2.5rem;
+}
+
+.component__main-bottom-copy {
+  font-size: 1.125rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.brown-color {
+  color: hsl(28, 10%, 43%);
+}
+
+.component__main-bottom-right {
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .component__header {
+    padding: 20px
+  }
+
+  .component__header-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .component__main {
+    padding: 30px 20px;
+  }
+
+  .component__main-title {
+    font-size: 1.6rem;
+  }
+
+  .component__main-bar-label {
+    font-size: .875rem;
+  }
+
+  .component__main-bars {
+    gap: 10px;
+  }
+
+  .component__main-bottom-title {
+    font-size: 1rem;
+  }
+
+  .component__main-bottom-subtitle {
+    font-size: 2rem;
+  }
+
+  .component__main-bottom-copy {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .component__main-bottom {
+    flex-direction: column;
+  }
+
+  .component__main-bottom-right {
+    margin-top: 30px;
+    text-align: center;
+  }
+}

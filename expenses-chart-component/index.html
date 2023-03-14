@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <div class="container">
+      <main class="page-main">
+        <div class="component">
+          <div class="component__header">
+            <div class="component__header-left">
+              <h1 class="component__header-title">My balance</h1>
+              <h2 class="component__header-subtitle">$921.48</h2>
+            </div><!-- Component header left -->
+            <div class="component__header-right">
+              <img src="images/logo.svg" alt="">
+            </div><!-- Component header right -->
+          </div><!-- Component header -->
+          <div class="component__main">
+            <h2 class="component__main-title">Spending - Last 7 days</h2>
+            <div class="component__main-bars">
+              <div class="component__main-col">
+                <div class="component__main-bar mon"></div>
+                <div class="tooltip"></div>
+                <p class="component__main-bar-label"></p>
+              </div><!-- Component main column -->
+              <div class="component__main-col">
+                <div class="component__main-bar tue"></div>
+                <div class="tooltip"></div>
+                <p class="component__main-bar-label"></p>
+              </div><!-- Component main column -->
+              <div class="component__main-col">
+                <div class="component__main-bar wed"></div>
+                <div class="tooltip"></div>
+                <p class="component__main-bar-label"></p>
+              </div><!-- Component main column -->
+              <div class="component__main-col">
+                <div class="component__main-bar thu"></div>
+                <div class="tooltip"></div>
+                <p class="component__main-bar-label"></p>
+              </div><!-- Component main column -->
+              <div class="component__main-col">
+                <div class="component__main-bar fri"></div>
+                <div class="tooltip"></div>
+                <p class="component__main-bar-label"></p>
+              </div><!-- Component main column -->
+              <div class="component__main-col">
+                <div class="component__main-bar sat"></div>
+                <div class="tooltip"></div>
+                <p class="component__main-bar-label"></p>
+              </div><!-- Component main column -->
+              <div class="component__main-col">
+                <div class="component__main-bar sun"></div>
+                <div class="tooltip"></div>
+                <p class="component__main-bar-label"></p>
+              </div><!-- Component main column -->
+            </div><!-- Component main bars -->
+            <div class="component__main-bottom">
+              <div class="component__main-bottom-left">
+                <h3 class="component__main-bottom-title">Total this month</h3>
+                <h4 class="component__main-bottom-subtitle">$478.33</h4>
+              </div><!-- Component main bottom left -->
+              <div class="component__main-bottom-right">
+                <p class="component__main-bottom-copy bold">+2.4%</p>
+                <p class="component__main-bottom-copy brown-color">from last month</p>
+              </div><!-- Component main bottom right -->
+            </div><!-- Component main bottom -->
+          </div><!-- Component main bottom -->
+        </div><!-- Component -->
+      </main><!-- Page main -->
+    </div><!-- Container -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
