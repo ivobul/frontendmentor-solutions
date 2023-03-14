@@ -144,6 +144,7 @@ a {
   display: flex;
   gap: 20px;
   min-height: 300px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
