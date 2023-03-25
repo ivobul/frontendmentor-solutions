@@ -1,0 +1,321 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+
+/* Page main */
+.page-main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Page main - Component */
+.component {
+  display: flex;
+  flex-basis: 800px;
+}
+
+/* Page main - Component image section */
+.component__bg {
+  background-image: url(images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  flex: 1 1 330px;
+}
+
+/* Page main - Component main section */
+.component__main {
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  flex: 1 1 470px;
+}
+
+/* Page main - Component main top section */
+.component__main-top {
+  padding: 30px 40px; 
+}
+
+.component__title {
+  color: hsl(217, 19%, 35%);
+  font-size: 1.35rem;
+  margin-bottom: 20px;
+}
+
+.component__copy {
+  color: hsl(214, 17%, 48%);
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+/* Page main - Component main bottom section */
+.component__main-bottom {
+  align-items: center;
+  display: flex;
+  padding: 10px 40px 30px; 
+  position: relative;
+}
+
+.component__avatar {
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+}
+
+.component__info {
+  margin-left: 20px;
+}
+
+.component__info-title {
+  color: hsl(217, 19%, 35%);
+  font-size: .9rem;
+}
+
+.component__info-subtitle {
+  color: hsl(212, 23%, 45%);
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.component__share-btn {
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  margin-left: auto;
+  width: 38px;
+  z-index: 200;
+}
+
+.component__share-btn:focus {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.component__share-btn:hover {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.component__share-btn:focus .component__share-img {
+  filter: brightness(0) invert(1);
+}
+
+.component__share-btn:hover .component__share-img {
+  filter: brightness(0) invert(1);
+}
+
+/* Page main - Component main bottom tooltip */
+.share-tooltip {
+  align-items: center;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 12px;
+  bottom: 105px;
+  display: none;
+  gap: 15px;
+  justify-content: center;
+  padding: 18px 30px;
+  position: absolute;
+  right: -63.5px;
+  width: 250px;
+}
+
+.share-tooltip::after {
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid hsl(217, 19%, 35%);
+  bottom: -14px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.share-tooltip__link {
+  display: flex;
+}
+
+.share-tooltip__title {
+  color: hsl(212, 23%, 69%);
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-right: 3px;
+  text-transform: uppercase;
+}
+
+.active {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .component {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+
+  .component__bg {
+    background-position: center center;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+  
+  .component__main {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    flex: 1;
+  }
+  
+  .component__main-top {
+    padding: 30px 40px 20px;
+  }
+
+  .component__title {
+    font-size: 1.125rem;
+  }
+  
+  .component__main-bottom {
+    padding: 20px 40px;
+  }
+
+  .component__avatar {
+    height: 44px;
+    width: 44px;
+  }
+  
+  .component__info-title,
+  .component__info-subtitle {
+    font-size: .875rem;
+  }
+
+  .share-tooltip {
+    border-radius: 0 0 12px 12px;
+    bottom: 0;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 0 0 0 40px;
+    right: 0;
+    width: 100%;
+  }
+
+  .share-tooltip::after {
+    display: none;
+  }
+
+  .component__share-btn {
+    height: 34px;
+    width: 34px;
+  }
+  
+  .active {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .component__main-top {
+    padding: 30px 20px 20px;
+  }
+  
+  .component__main-bottom {
+    padding: 20px;
+  }
+
+  .share-tooltip {
+    padding: 0 0 0 20px;
+  }
+}
