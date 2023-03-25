@@ -2,6 +2,7 @@
 
 - [3-Column Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/3-column-preview-card-component/)
 - [Advice Generator App](https://ivobul.github.io/frontendmentor-solutions/advice-generator-app/)
+- [Article Preview Component](https://ivobul.github.io/frontendmentor-solutions/article-preview-component/)
 - [Base Apparel Coming Soon Page](https://ivobul.github.io/frontendmentor-solutions/base-apparel-coming-soon-page/)
 - [Clipboard Landing Page](https://ivobul.github.io/frontendmentor-solutions/clipboard-landing-page/)
 - [Expenses Chart Component](https://ivobul.github.io/frontendmentor-solutions/expenses-chart-component/)
