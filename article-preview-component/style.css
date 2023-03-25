@@ -178,8 +178,13 @@ a {
   height: 38px;
   justify-content: center;
   margin-left: auto;
+  transition: background-color .5s;
   width: 38px;
   z-index: 200;
+}
+
+.component__share-img  {
+  transition: filter .5s;
 }
 
 .component__share-btn:focus {
