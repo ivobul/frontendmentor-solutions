@@ -234,6 +234,14 @@ a {
   display: flex;
 }
 
+.share-tooltip__icon {
+  transition: all .2s;
+}
+
+.share-tooltip__link:hover .share-tooltip__icon {
+  transform: translateY(-3px)
+}
+
 .share-tooltip__title {
   color: hsl(212, 23%, 69%);
   font-size: .9rem;
