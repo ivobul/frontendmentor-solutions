@@ -89,14 +89,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100vh;
-  padding: 50px 25px;
+  padding: 40px 25px;
 }
 
 .card {
   border-radius: 10px;
   display: flex;
   font-family: 'Lexend Deca', sans-serif;
-  flex-basis: 800px;
+  flex-basis: 900px;
   min-height: 450px;
   overflow: hidden;
 }
@@ -136,7 +136,7 @@ body {
 .suvs, 
 .luxury, 
 .sedans {
-  padding: 30px;
+  padding: 40px;
 }
 
 .sedans {
@@ -164,8 +164,8 @@ body {
 }
 
 /* Responsive design */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .card {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
