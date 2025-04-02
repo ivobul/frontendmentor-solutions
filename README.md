@@ -4,6 +4,7 @@
 - [Advice Generator App](https://ivobul.github.io/frontendmentor-solutions/advice-generator-app/)
 - [Article Preview Component](https://ivobul.github.io/frontendmentor-solutions/article-preview-component/)
 - [Base Apparel Coming Soon Page](https://ivobul.github.io/frontendmentor-solutions/base-apparel-coming-soon-page/)
+- [Blog Preview Card](https://ivobul.github.io/frontendmentor-solutions/blog-preview-card/)
 - [Clipboard Landing Page](https://ivobul.github.io/frontendmentor-solutions/clipboard-landing-page/)
 - [Expenses Chart Component](https://ivobul.github.io/frontendmentor-solutions/expenses-chart-component/)
 - [FAQ Accordion Card](https://ivobul.github.io/frontendmentor-solutions/faq-accordion-card/)
