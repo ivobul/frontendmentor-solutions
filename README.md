@@ -26,6 +26,7 @@
 - [QR Code Component](https://ivobul.github.io/frontendmentor-solutions/qr-code-component/)
 - [Results Summary Component](https://ivobul.github.io/frontendmentor-solutions/results-summary-component/)
 - [Single Price Grid Component](https://ivobul.github.io/frontendmentor-solutions/single-price-grid-component/)
+- [Social Links Profile](https://ivobul.github.io/frontendmentor-solutions/social-links-profile/)
 - [Social Media Dashboard with Theme Switcher](https://ivobul.github.io/frontendmentor-solutions/social-media-dashboard-with-theme-switcher/)
 - [Social Proof Section](https://ivobul.github.io/frontendmentor-solutions/social-proof-section/)
 - [Stats Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/stats-preview-card-component/)
