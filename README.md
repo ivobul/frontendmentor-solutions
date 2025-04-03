@@ -24,6 +24,7 @@
 - [Product Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/product-preview-card-component/)
 - [Profile Card Component](https://ivobul.github.io/frontendmentor-solutions/profile-card-component/)
 - [QR Code Component](https://ivobul.github.io/frontendmentor-solutions/qr-code-component/)
+- [Recipe Page](https://ivobul.github.io/frontendmentor-solutions/recipe-page/)
 - [Results Summary Component](https://ivobul.github.io/frontendmentor-solutions/results-summary-component/)
 - [Single Price Grid Component](https://ivobul.github.io/frontendmentor-solutions/single-price-grid-component/)
 - [Social Links Profile](https://ivobul.github.io/frontendmentor-solutions/social-links-profile/)
