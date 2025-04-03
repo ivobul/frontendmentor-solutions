@@ -1,0 +1,325 @@
+/* CSS Reset - A more modern and concise version 
+* Many thanks to: 
+* Josh Comeau - https://www.joshwcomeau.com/css/custom-css-reset/
+* Kevin Powell - https://youtu.be/eWmDW4zEXt4?si=S94B0BbGfmo5VZsq/
+* Andy Bell - https://piccalil.li/blog/a-more-modern-css-reset/
+* Ire Aderinokun - https://bitsofco.de/my-css-reset-base/
+*/
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body defaults rules */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Typography tweaks */
+/* Remove built-in form typography styles */
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+}
+
+/* Typography tweaks */
+/* Avoid text overflows */
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Typography tweaks */
+/* Balance the number of words*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Reset specific element styles */
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img,
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Basic styles */
+.page {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 128px 48px;
+  width: 100%;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.color-stone {
+  color: hsl(30, 10%, 34%);
+}
+
+.color-brown {
+  color: hsl(14, 45%, 36%);
+}
+
+/* Recipe */
+.recipe {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 24px;
+  max-width: 736px;
+  width: 100%;
+}
+
+/* Recipe hero section */
+.recipe__hero-img-box {
+  padding: 40px 40px 0;
+}
+
+.recipe__hero-img {
+  border-radius: 12px;
+}
+
+.recipe__hero-main {
+  padding: 0 40px;
+}
+
+.recipe__hero-title {
+  color: hsl(24, 5%, 18%);
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-top: 40px;
+}
+
+.recipe__hero-copy {
+  color: hsl(30, 10%, 34%);
+  margin-top: 20px;
+}
+
+/* Recipe main section */
+.recipe__main {
+  padding: 0 40px 40px;
+}
+
+/* Recipe main prepare section */
+.recipe__main-prepare {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+  margin-top: 32px;
+  padding: 24px;
+}
+
+.recipe__main-prepare-title {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.25rem;
+}
+
+.recipe__main-prepare-list {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 16px;
+}
+
+.recipe__main-prepare-list-item {
+  color: hsl(30, 10%, 34%);
+  padding-left: 15px;
+}
+
+.recipe__main-prepare-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.recipe__main-prepare-list-item::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+/* Recipe main ingredients section */
+.recipe__main-ingredients {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 32px 0;
+}
+
+.recipe__main-ingredients-title {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+}
+
+.recipe__main-ingredients-list {
+  margin-top: 24px;
+  margin-left: 24px;
+  list-style: disc;
+}
+
+.recipe__main-ingredients-list-item {
+   color: hsl(30, 10%, 34%);
+   padding-left: 15px;
+}
+
+.recipe__main-ingredients-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.recipe__main-ingredients-list-item::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+/* Recipe main instructions */
+.recipe__main-instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 32px 0;
+}
+
+.recipe__main-instructions-title {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+}
+
+.recipe__main-instructions-list {
+  list-style: decimal;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.recipe__main-instructions-list-item {
+  color: hsl(30, 10%, 34%);
+  padding-left: 15px;
+}
+
+.recipe__main-instructions-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.recipe__main-instructions-list-item::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+/* Recipe main nutrition section */
+.recipe__main-nutrition {
+  padding-top: 32px;
+}
+
+.recipe__main-nutrition-title {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+}
+
+.recipe__main-nutrition-copy {
+  color: hsl(30, 10%, 34%);
+  margin-top: 24px;
+}
+
+.recipe__main-nutrition-table {
+  margin-top: 24px;
+}
+
+.recipe__main-nutrition-table-row {
+  display: flex;
+  gap: 20px;
+  padding-left: 39px;
+  padding-right: 32px; 
+}
+
+.recipe__main-nutrition-table-row:first-child {
+  padding-bottom: 16px;
+}
+
+.recipe__main-nutrition-table-row:nth-child(2),
+.recipe__main-nutrition-table-row:nth-child(3) {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.recipe__main-nutrition-table-row:last-child {
+  padding-top: 16px;
+}
+
+.recipe__main-nutrition-table-row:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.recipe__main-nutrition-table-data {
+  flex: 50%;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+  
+  .recipe {
+    border-radius: 0;
+    max-width: 100%;
+  }
+  
+  .recipe__hero-img-box {
+    padding: 0;
+  }
+  
+  .recipe__hero-img {
+    border-radius: 0; 
+  }
+  
+  .recipe__hero-main {
+    padding: 0 25px;
+  }
+  
+  .recipe__hero-title {
+    font-size: 2rem;
+  }
+  
+  .recipe__main {
+    padding: 0 25px 40px;
+  }
+}
