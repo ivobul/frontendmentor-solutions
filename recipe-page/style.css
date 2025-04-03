@@ -161,6 +161,7 @@ a:visited {
 .recipe__main-prepare-title {
   color: hsl(332, 51%, 32%);
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .recipe__main-prepare-list {
@@ -192,6 +193,7 @@ a:visited {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
   font-size: 1.75rem;
+  font-weight: 400;
 }
 
 .recipe__main-ingredients-list {
@@ -213,7 +215,7 @@ a:visited {
   color: hsl(14, 45%, 36%);
 }
 
-/* Recipe main instructions */
+/* Recipe main instructions section */
 .recipe__main-instructions {
   border-bottom: 1px solid hsl(30, 18%, 87%);
   padding: 32px 0;
@@ -223,6 +225,7 @@ a:visited {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
   font-size: 1.75rem;
+  font-weight: 400;
 }
 
 .recipe__main-instructions-list {
@@ -253,6 +256,7 @@ a:visited {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
   font-size: 1.75rem;
+  font-weight: 400;
 }
 
 .recipe__main-nutrition-copy {
