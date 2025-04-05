@@ -18,6 +18,7 @@
 - [Intro Component with Signup Form](https://ivobul.github.io/frontendmentor-solutions/intro-component-with-signup-form/)
 - [Loopstudios Landing Page](https://ivobul.github.io/frontendmentor-solutions/loopstudios-landing-page/)
 - [NFT Preview Card Component](https://ivobul.github.io/frontendmentor-solutions/nft-preview-card-component/)
+- [Notifications Page](https://ivobul.github.io/frontendmentor-solutions/notifications-page/)
 - [Order Summary Component](https://ivobul.github.io/frontendmentor-solutions/order-summary-component/)
 - [Ping Coming Soon Page](https://ivobul.github.io/frontendmentor-solutions/ping-coming-soon-page/)
 - [Pricing Component with Toggle](https://ivobul.github.io/frontendmentor-solutions/pricing-component-with-toggle/)
