@@ -6,6 +6,7 @@
 - [Base Apparel Coming Soon Page](https://ivobul.github.io/frontendmentor-solutions/base-apparel-coming-soon-page/)
 - [Blog Preview Card](https://ivobul.github.io/frontendmentor-solutions/blog-preview-card/)
 - [Clipboard Landing Page](https://ivobul.github.io/frontendmentor-solutions/clipboard-landing-page/)
+- [Contact Form](https://ivobul.github.io/frontendmentor-solutions/contact-form/)
 - [Expenses Chart Component](https://ivobul.github.io/frontendmentor-solutions/expenses-chart-component/)
 - [FAQ Accordion Card](https://ivobul.github.io/frontendmentor-solutions/faq-accordion-card/)
 - [Four Card Feature Section](https://ivobul.github.io/frontendmentor-solutions/four-card-feature-section/)
