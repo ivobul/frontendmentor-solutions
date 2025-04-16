@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    
+    <div class="snackbar">
+      <div class="snackbar__box">
+        <img src="assets/images/icon-success-check.svg" alt="">Message Sent!
+      </div>
+      <p class="snackbar__copy">Thanks for completing the form. We’ll be in touch soon!</p>
+    </div><!-- Snackbar notification -->
+    
+    <div class="container">
+      <main class="page-main">
+        <form class="page-main__form">
+          <h1  class="page-main__form-title">Contact Us</h1>
+          <div class="page-main__form-box">
+            <div class="page-main__form-box-item">
+              <label for="fname" class="page-main__form-label">First Name *</label>
+              <input type="text" id="fname" class="page-main__form-text-inp page-main__form-field" name="fname" aria-required="true">
+            </div><!-- Form box item -->
+            
+            <div class="page-main__form-box-item">
+              <label for="lname" class="page-main__form-label">Last Name *</label>
+              <input type="text" id="lname" class="page-main__form-text-inp page-main__form-field" name="lname" aria-required="true">
+            </div><!-- Form box item -->
+          </div><!-- Form box -->
+          
+          <div class="page-main__form-box">
+            <div class="page-main__form-box-item">
+              <label for="email" class="page-main__form-label">Email Address *</label>
+              <input type="email" id="email" class="page-main__form-email-inp page-main__form-field" name="email" aria-required="true">
+            </div><!-- Form box item -->
+          </div><!-- Form box -->
+          
+          <fieldset id="radio-group" class="page-main__form-box">
+            <legend class="page-main__form-box-title">Query Type *</legend>
+            
+            <div class="page-main__form-box-item">
+              <label class="page-main__form-label page-main__form-label--box page-main__form-field">
+                <input type="radio" id="radio-btn-1" class="page-main__form-radio-inp" name="radio" value="general enquiry" aria-required="true">
+                General Enquiry
+              </label>
+            </div><!-- Form box item -->
+            
+            <div class="page-main__form-box-item">
+              <label class="page-main__form-label page-main__form-label--box page-main__form-field">
+                <input type="radio" id="radio-btn-2" class="page-main__form-radio-inp" name="radio" value="support request" aria-required="true">
+                Support Request</label>
+            </div><!-- Form box item -->
+          </fieldset><!-- Form box -->
+          
+          <div class="page-main__form-box">
+            <div class="page-main__form-box-item">
+              <label for="message" class="page-main__form-label">Message *</label>
+              <textarea id="message" class="page-main__form-message page-main__form-field" name="message" aria-required="true"></textarea>
+            </div><!-- Form box item -->
+          </div><!-- Form box -->
+          
+          <div class="page-main__form-box">
+            <div class="page-main__form-box-item">
+              <input type="checkbox" id="checkbox" class="page-main__form-checkbox" name="checkbox" aria-required="true">
+              <label for="checkbox" class="page-main__form-label">I consent to being contacted by the team *</label>
+            </div><!-- Form box item -->
+          </div><!-- Form box -->
+          
+          <div class="page-main__form-box">
+            <div class="page-main__form-box-item">
+              <input type="submit" class="page-main__form-submit btn" value="Submit">
+            </div><!-- Form box item -->
+          </div><!-- Form box -->
+        </form><!-- Form -->
+      </main><!-- Page main -->
+    </div><!-- Page container -->
+    
+     <!-- JustValidate - Modern form validation library -->
+    <script>
+      const validator = new JustValidate(".page-main__form")
+      
+      validator.addRequiredGroup('#radio-group', 'Please select a query type')
+      
+      validator
+        .addField("#fname", [
+          {
+            rule: "required",
+          },
+        ])
+        .addField("#lname", [
+          {
+            rule: "required",
+          },
+        ])
+        .addField("#email", [
+          {
+            rule: "required",
+          },
+          {
+            rule: "email",
+            errorMessage: 'Please enter a valid email address',
+          },
+        ])
+        .addField("#message", [
+          {
+            rule: "required",
+          },
+        ])
+        .addField("#checkbox", [
+          {
+            rule: "required",
+            errorMessage: 'To submit this form, please consent to being contacted',
+          },
+        ])
+        .onSuccess(() => {
+          const snackbarElem = document.querySelector(".snackbar")
+          snackbarElem.classList.add("show")
+        
+          setTimeout(() => {
+           snackbarElem.classList.remove("show");
+          }, 6500)
+        })
+    </script>
+   
+  </body>
+</html>
