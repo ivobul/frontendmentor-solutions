@@ -1,0 +1,213 @@
+/* CSS Reset - A more modern and concise version 
+* Many thanks to: 
+* Josh Comeau - https://www.joshwcomeau.com/css/custom-css-reset/
+* Kevin Powell - https://youtu.be/eWmDW4zEXt4?si=S94B0BbGfmo5VZsq/
+* Andy Bell - https://piccalil.li/blog/a-more-modern-css-reset/
+* Ire Aderinokun - https://bitsofco.de/my-css-reset-base/
+*/
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body defaults rules */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Typography tweaks */
+/* Remove built-in form typography styles */
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+}
+
+/* Typography tweaks */
+/* Avoid text overflows */
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Typography tweaks */
+/* Balance the number of words*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Reset specific element styles */
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img,
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Basic styles */
+.page {
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 101%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.page-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 60px 90px;
+  width: 100%;
+}
+
+/* Page main */
+.page-main {
+  display: flex;
+  justify-content: center;
+}
+
+/* Page main app */
+.page-main__app {
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 16px;
+  filter: drop-shadow(0 22px 20px hsl(292, 33%, 77%));
+  flex-basis: 610px;
+  padding: 40px;
+}
+
+/* Page main app top section */
+.page-main__app-top {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.page-main__app-title {
+  font-size: 3.5rem;
+}
+
+.page-main__app-illustration {
+  flex-basis: 40px;
+  height: 40px;
+}
+
+/* Page main app accordion section */
+.page-main__app-accordion {
+  position: relative;
+}
+
+.page-main__app-accordion:not(:last-child) {
+  border-bottom: 2px solid hsl(275, 100%, 97%);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
+.page-main__app-accordion-title {
+  color: hsl(292, 42%, 14%);
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600; 
+  margin-right: 30px;
+}
+
+.page-main__app-accordion-title::marker {
+  content: none;
+}
+
+.page-main__app-accordion-title::after {
+  content: url(assets/images/icon-plus.svg);
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+
+.page-main__app-accordion[open] .page-main__app-accordion-title::after {
+  content: url(assets/images/icon-minus.svg);
+}
+
+.page-main__app-accordion-copy {
+  color: hsl(292, 16%, 49%);
+  padding-top: 24px;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+  .page {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+  }
+  
+  .page-container {
+    padding: 60px 24px;
+  }
+  
+  .page-main__app {
+    border-radius: 8px;
+    padding: 24px;
+  }
+  
+  .page-main__app-top {
+    gap: 18px;
+  }
+  
+  .page-main__app-illustration {
+    flex-basis: 24px;
+    height: 24px;
+  }
+  
+  .page-main__app-title {
+    font-size: 2rem;
+  }
+  
+  .page-main__app-accordion-title {
+    font-size: 1rem;
+    margin-right: 50px;
+  }
+  
+  .page-main__app-accordion-copy {
+    font-size: .875rem;
+  }
+}
