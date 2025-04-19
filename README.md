@@ -9,6 +9,7 @@
 - [Contact Form](https://ivobul.github.io/frontendmentor-solutions/contact-form/)
 - [Expenses Chart Component](https://ivobul.github.io/frontendmentor-solutions/expenses-chart-component/)
 - [FAQ Accordion Card](https://ivobul.github.io/frontendmentor-solutions/faq-accordion-card/)
+- [FAQ Accordion](https://ivobul.github.io/frontendmentor-solutions/faq-accordion/)
 - [Four Card Feature Section](https://ivobul.github.io/frontendmentor-solutions/four-card-feature-section/)
 - [Fylo Data Storage Component](https://ivobul.github.io/frontendmentor-solutions/fylo-data-storage-component/)
 - [Fylo Landing Page with Two Column Layout](https://ivobul.github.io/frontendmentor-solutions/fylo-landing-page-with-two-column-layout/)
